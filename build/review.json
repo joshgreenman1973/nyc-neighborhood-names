@@ -539,6 +539,171 @@
     "section": "Archives",
     "confirmed": true
    }
+  },
+  "Greenpoint": {
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1860-01-02",
+    "headline": "DIED.",
+    "url": "https://www.nytimes.com/1860/01/02/archives/died.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Crown Heights": {
+   "category": "old",
+   "note": "The 1912 headline puts a Jesuit college \"on Crown Heights.\"",
+   "first": {
+    "date": "1912-05-04",
+    "headline": "JESUITS' BROOKLYN COLLEGE",
+    "url": "https://www.nytimes.com/1912/05/04/archives/jesuits-brooklyn-college-building-on-crown-heights-to-be-largest-of.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Flatbush": {
+   "category": "old",
+   "note": "In 1851 Flatbush was its own town, outside the City of Brooklyn. The pre-1950 count hit the API ceiling of 10,000.",
+   "first": {
+    "date": "1851-09-20",
+    "headline": "BROOKLYN.",
+    "url": "https://www.nytimes.com/1851/09/20/archives/brooklyn-accident-german-hussars-the-fire-in-flatbush-woods.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Kensington": {
+   "category": "old",
+   "note": "No early headline or summary shows the name, and many early matches are likely London's Kensington. The date is the earliest search match.",
+   "first": {
+    "date": "1860-01-23",
+    "headline": "MARINE INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1860/01/23/archives/marine-intelligence-cleared-arrived-arrived-sailed-miscellaneous-by.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Bay Ridge": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1859-08-26",
+    "headline": "BROOKLYN INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1859/08/26/archives/brooklyn-intelligence-suffocated-in-a-cesspool-carrol-park-music.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Dyker Heights": {
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1900-03-17",
+    "headline": "EXCITING UP-TOWN FIRE.",
+    "url": "https://www.nytimes.com/1900/03/17/archives/exciting-uptown-fire-woman-badly-burned-rescued-by-firemen-children.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Bensonhurst": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1897-08-13",
+    "headline": "TROLLEY CAR COLLISION.",
+    "url": "https://www.nytimes.com/1897/08/13/archives/trolley-car-collision-four-persons-injured-in-accident-on.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Brownsville": {
+   "category": "old",
+   "note": "No early headline or summary shows the name, and some early matches may be Brownsville, Texas. The date is the earliest search match.",
+   "first": {
+    "date": "1860-03-28",
+    "headline": "NEWS OF THE DAY.",
+    "url": "https://www.nytimes.com/1860/03/28/archives/news-of-the-day-harlem-railroad-milk-trains.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "East New York": {
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1852-09-07",
+    "headline": "BROOKLYN CITY.",
+    "url": "https://www.nytimes.com/1852/09/07/archives/brooklyn-city-catharine-ferry-fulton-ferry-company-excursions-more.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Canarsie": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1852-07-23",
+    "headline": "BROOKLYN CITY.",
+    "url": "https://www.nytimes.com/1852/07/23/archives/brooklyn-city-eleventh-ward-canarsie-church-of-the-messiah.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Sheepshead Bay": {
+   "category": "old",
+   "note": "The earliest confirmed headlines are about the racetrack at Sheepshead Bay.",
+   "first": {
+    "date": "1885-07-02",
+    "headline": "MISS WOODFORD BEATEN",
+    "url": "https://www.nytimes.com/1885/07/02/archives/miss-woodford-beaten-the-queen-of-the-turfs-first-defeat-in-two.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Brighton Beach": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1878-07-02",
+    "headline": "ANOTHER CONEY ISLAND RAILROAD.",
+    "url": "https://www.nytimes.com/1878/07/02/archives/another-coney-island-railroad-opening-of-the-brooklyn-and-flatbush.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Coney Island": {
+   "category": "old",
+   "note": "No early headline or summary among the oldest matches shows the name. The date is the earliest search match. The pre-1950 count hit the API ceiling of 10,000.",
+   "first": {
+    "date": "1860-03-29",
+    "headline": "THE MURDERS AT SEA.",
+    "url": "https://www.nytimes.com/1860/03/29/archives/the-murders-at-sea-examination-of-hicksadditional-evidence-against.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Starrett City": {
+   "category": "coined",
+   "note": "The 1972 summary describes the start of construction on the housing development that gave the area its name.",
+   "first": {
+    "date": "1972-07-16",
+    "headline": "Housing for 24,000 Begun in Brooklyn",
+    "url": "https://www.nytimes.com/1972/07/16/archives/housing-for-24000-begun-in-brooklyn.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Jackson Heights": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1917-04-04",
+    "headline": "Rifle Club at Jackson Heights.",
+    "url": "https://www.nytimes.com/1917/04/04/archives/rifle-club-at-jackson-heights.html",
+    "section": "Archives",
+    "confirmed": true
+   }
   }
  }
 }

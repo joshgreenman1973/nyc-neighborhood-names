@@ -1396,6 +1396,445 @@
    "capped": [
     "pre-1950"
    ]
+  },
+  {
+   "name": "Greenpoint",
+   "borough": "Brooklyn",
+   "lat": 40.73,
+   "lon": -73.951,
+   "query": "\"Greenpoint\" Brooklyn",
+   "decades": {
+    "pre-1950": 4071,
+    "1950s": 438,
+    "1960s": 397,
+    "1970s": 585,
+    "1980s": 381,
+    "1990s": 550,
+    "2000s": 1694,
+    "2010s": 1648,
+    "2020s": 669
+   },
+   "total": 10433,
+   "first": {
+    "date": "1860-01-02",
+    "headline": "DIED.",
+    "url": "https://www.nytimes.com/1860/01/02/archives/died.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Crown Heights",
+   "borough": "Brooklyn",
+   "lat": 40.6694,
+   "lon": -73.9422,
+   "query": "\"Crown Heights\" Brooklyn",
+   "decades": {
+    "pre-1950": 200,
+    "1950s": 82,
+    "1960s": 257,
+    "1970s": 844,
+    "1980s": 610,
+    "1990s": 2034,
+    "2000s": 1733,
+    "2010s": 1483,
+    "2020s": 747
+   },
+   "total": 7990,
+   "first": {
+    "date": "1912-05-04",
+    "headline": "JESUITS' BROOKLYN COLLEGE",
+    "url": "https://www.nytimes.com/1912/05/04/archives/jesuits-brooklyn-college-building-on-crown-heights-to-be-largest-of.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "The 1912 headline puts a Jesuit college \"on Crown Heights.\"",
+   "capped": []
+  },
+  {
+   "name": "Flatbush",
+   "borough": "Brooklyn",
+   "lat": 40.6415,
+   "lon": -73.9594,
+   "query": "\"Flatbush\" Brooklyn",
+   "decades": {
+    "pre-1950": 10000,
+    "1950s": 1914,
+    "1960s": 1479,
+    "1970s": 2966,
+    "1980s": 1707,
+    "1990s": 2680,
+    "2000s": 3330,
+    "2010s": 1754,
+    "2020s": 630
+   },
+   "total": 26460,
+   "first": {
+    "date": "1851-09-20",
+    "headline": "BROOKLYN.",
+    "url": "https://www.nytimes.com/1851/09/20/archives/brooklyn-accident-german-hussars-the-fire-in-flatbush-woods.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "In 1851 Flatbush was its own town, outside the City of Brooklyn. The pre-1950 count hit the API ceiling of 10,000.",
+   "capped": [
+    "pre-1950"
+   ]
+  },
+  {
+   "name": "Kensington",
+   "borough": "Brooklyn",
+   "lat": 40.638,
+   "lon": -73.975,
+   "query": "\"Kensington\" Brooklyn",
+   "decades": {
+    "pre-1950": 1012,
+    "1950s": 46,
+    "1960s": 39,
+    "1970s": 114,
+    "1980s": 102,
+    "1990s": 234,
+    "2000s": 326,
+    "2010s": 240,
+    "2020s": 122
+   },
+   "total": 2235,
+   "first": {
+    "date": "1860-01-23",
+    "headline": "MARINE INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1860/01/23/archives/marine-intelligence-cleared-arrived-arrived-sailed-miscellaneous-by.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name, and many early matches are likely London's Kensington. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Bay Ridge",
+   "borough": "Brooklyn",
+   "lat": 40.6264,
+   "lon": -74.0299,
+   "query": "\"Bay Ridge\" Brooklyn",
+   "decades": {
+    "pre-1950": 5145,
+    "1950s": 745,
+    "1960s": 553,
+    "1970s": 1081,
+    "1980s": 615,
+    "1990s": 1046,
+    "2000s": 1406,
+    "2010s": 708,
+    "2020s": 325
+   },
+   "total": 11624,
+   "first": {
+    "date": "1859-08-26",
+    "headline": "BROOKLYN INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1859/08/26/archives/brooklyn-intelligence-suffocated-in-a-cesspool-carrol-park-music.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Dyker Heights",
+   "borough": "Brooklyn",
+   "lat": 40.6214,
+   "lon": -74.0094,
+   "query": "\"Dyker Heights\" Brooklyn",
+   "decades": {
+    "pre-1950": 253,
+    "1950s": 20,
+    "1960s": 11,
+    "1970s": 20,
+    "1980s": 53,
+    "1990s": 99,
+    "2000s": 202,
+    "2010s": 118,
+    "2020s": 55
+   },
+   "total": 831,
+   "first": {
+    "date": "1900-03-17",
+    "headline": "EXCITING UP-TOWN FIRE.",
+    "url": "https://www.nytimes.com/1900/03/17/archives/exciting-uptown-fire-woman-badly-burned-rescued-by-firemen-children.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Bensonhurst",
+   "borough": "Brooklyn",
+   "lat": 40.602,
+   "lon": -73.994,
+   "query": "\"Bensonhurst\" Brooklyn",
+   "decades": {
+    "pre-1950": 2130,
+    "1950s": 164,
+    "1960s": 212,
+    "1970s": 592,
+    "1980s": 597,
+    "1990s": 1063,
+    "2000s": 799,
+    "2010s": 458,
+    "2020s": 206
+   },
+   "total": 6221,
+   "first": {
+    "date": "1897-08-13",
+    "headline": "TROLLEY CAR COLLISION.",
+    "url": "https://www.nytimes.com/1897/08/13/archives/trolley-car-collision-four-persons-injured-in-accident-on.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Brownsville",
+   "borough": "Brooklyn",
+   "lat": 40.663,
+   "lon": -73.91,
+   "query": "\"Brownsville\" Brooklyn",
+   "decades": {
+    "pre-1950": 3127,
+    "1950s": 395,
+    "1960s": 1171,
+    "1970s": 1253,
+    "1980s": 498,
+    "1990s": 719,
+    "2000s": 755,
+    "2010s": 745,
+    "2020s": 301
+   },
+   "total": 8964,
+   "first": {
+    "date": "1860-03-28",
+    "headline": "NEWS OF THE DAY.",
+    "url": "https://www.nytimes.com/1860/03/28/archives/news-of-the-day-harlem-railroad-milk-trains.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name, and some early matches may be Brownsville, Texas. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "East New York",
+   "borough": "Brooklyn",
+   "lat": 40.666,
+   "lon": -73.882,
+   "query": "\"East New York\" Brooklyn",
+   "decades": {
+    "pre-1950": 3794,
+    "1950s": 496,
+    "1960s": 746,
+    "1970s": 899,
+    "1980s": 728,
+    "1990s": 1369,
+    "2000s": 1320,
+    "2010s": 874,
+    "2020s": 259
+   },
+   "total": 10485,
+   "first": {
+    "date": "1852-09-07",
+    "headline": "BROOKLYN CITY.",
+    "url": "https://www.nytimes.com/1852/09/07/archives/brooklyn-city-catharine-ferry-fulton-ferry-company-excursions-more.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Canarsie",
+   "borough": "Brooklyn",
+   "lat": 40.64,
+   "lon": -73.9,
+   "query": "\"Canarsie\" Brooklyn",
+   "decades": {
+    "pre-1950": 1259,
+    "1950s": 227,
+    "1960s": 350,
+    "1970s": 913,
+    "1980s": 401,
+    "1990s": 550,
+    "2000s": 644,
+    "2010s": 359,
+    "2020s": 142
+   },
+   "total": 4845,
+   "first": {
+    "date": "1852-07-23",
+    "headline": "BROOKLYN CITY.",
+    "url": "https://www.nytimes.com/1852/07/23/archives/brooklyn-city-eleventh-ward-canarsie-church-of-the-messiah.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Sheepshead Bay",
+   "borough": "Brooklyn",
+   "lat": 40.587,
+   "lon": -73.954,
+   "query": "\"Sheepshead Bay\" Brooklyn",
+   "decades": {
+    "pre-1950": 2632,
+    "1950s": 312,
+    "1960s": 301,
+    "1970s": 639,
+    "1980s": 436,
+    "1990s": 644,
+    "2000s": 627,
+    "2010s": 438,
+    "2020s": 139
+   },
+   "total": 6168,
+   "first": {
+    "date": "1885-07-02",
+    "headline": "MISS WOODFORD BEATEN",
+    "url": "https://www.nytimes.com/1885/07/02/archives/miss-woodford-beaten-the-queen-of-the-turfs-first-defeat-in-two.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "The earliest confirmed headlines are about the racetrack at Sheepshead Bay.",
+   "capped": []
+  },
+  {
+   "name": "Brighton Beach",
+   "borough": "Brooklyn",
+   "lat": 40.5781,
+   "lon": -73.9597,
+   "query": "\"Brighton Beach\" Brooklyn",
+   "decades": {
+    "pre-1950": 2049,
+    "1950s": 221,
+    "1960s": 152,
+    "1970s": 443,
+    "1980s": 360,
+    "1990s": 534,
+    "2000s": 566,
+    "2010s": 434,
+    "2020s": 137
+   },
+   "total": 4896,
+   "first": {
+    "date": "1878-07-02",
+    "headline": "ANOTHER CONEY ISLAND RAILROAD.",
+    "url": "https://www.nytimes.com/1878/07/02/archives/another-coney-island-railroad-opening-of-the-brooklyn-and-flatbush.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Coney Island",
+   "borough": "Brooklyn",
+   "lat": 40.5755,
+   "lon": -73.985,
+   "query": "\"Coney Island\" Brooklyn",
+   "decades": {
+    "pre-1950": 10000,
+    "1950s": 1177,
+    "1960s": 1254,
+    "1970s": 2148,
+    "1980s": 926,
+    "1990s": 1620,
+    "2000s": 2291,
+    "2010s": 1652,
+    "2020s": 538
+   },
+   "total": 21606,
+   "first": {
+    "date": "1860-03-29",
+    "headline": "THE MURDERS AT SEA.",
+    "url": "https://www.nytimes.com/1860/03/29/archives/the-murders-at-sea-examination-of-hicksadditional-evidence-against.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary among the oldest matches shows the name. The date is the earliest search match. The pre-1950 count hit the API ceiling of 10,000.",
+   "capped": [
+    "pre-1950"
+   ]
+  },
+  {
+   "name": "Starrett City",
+   "borough": "Brooklyn",
+   "lat": 40.648,
+   "lon": -73.883,
+   "query": "\"Starrett City\" Brooklyn",
+   "decades": {
+    "pre-1950": 0,
+    "1950s": 0,
+    "1960s": 0,
+    "1970s": 98,
+    "1980s": 123,
+    "1990s": 83,
+    "2000s": 145,
+    "2010s": 40,
+    "2020s": 12
+   },
+   "total": 501,
+   "first": {
+    "date": "1972-07-16",
+    "headline": "Housing for 24,000 Begun in Brooklyn",
+    "url": "https://www.nytimes.com/1972/07/16/archives/housing-for-24000-begun-in-brooklyn.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "coined",
+   "note": "The 1972 summary describes the start of construction on the housing development that gave the area its name.",
+   "capped": []
+  },
+  {
+   "name": "Jackson Heights",
+   "borough": "Queens",
+   "lat": 40.7557,
+   "lon": -73.8831,
+   "query": "\"Jackson Heights\" Queens",
+   "decades": {
+    "pre-1950": 3700,
+    "1950s": 1633,
+    "1960s": 1230,
+    "1970s": 1167,
+    "1980s": 649,
+    "1990s": 1099,
+    "2000s": 1244,
+    "2010s": 754,
+    "2020s": 446
+   },
+   "total": 11922,
+   "first": {
+    "date": "1917-04-04",
+    "headline": "Rifle Club at Jackson Heights.",
+    "url": "https://www.nytimes.com/1917/04/04/archives/rifle-club-at-jackson-heights.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
   }
  ],
  "findings": [

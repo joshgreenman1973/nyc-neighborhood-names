@@ -10,7 +10,10 @@ out = []
 for r in raw:
     if r['name'] in review.get('drop', {}):
         continue
-    rv = review['names'].get(r['name'], {})
+    rv = review['names'].get(r['name'])
+    if rv is None:
+        print('  not reviewed yet, skipped:', r['name'])
+        continue
     lat, lon = coords[r['name']]
     first = rv.get('first')
     out.append({'name': r['name'], 'borough': r['borough'], 'lat': lat, 'lon': lon,

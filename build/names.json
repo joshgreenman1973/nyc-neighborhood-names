@@ -198,5 +198,129 @@
  {
   "name": "Long Island City",
   "borough": "Queens"
+ },
+ {
+  "name": "Greenpoint",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Crown Heights",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Flatbush",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Kensington",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Sunset Park",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Bay Ridge",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Dyker Heights",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Bensonhurst",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Brownsville",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "East New York",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Canarsie",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Sheepshead Bay",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Brighton Beach",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Coney Island",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Starrett City",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Jackson Heights",
+  "borough": "Queens"
+ },
+ {
+  "name": "Forest Hills",
+  "borough": "Queens"
+ },
+ {
+  "name": "Sunnyside",
+  "borough": "Queens"
+ },
+ {
+  "name": "Ridgewood",
+  "borough": "Queens"
+ },
+ {
+  "name": "Flushing",
+  "borough": "Queens"
+ },
+ {
+  "name": "Jamaica",
+  "borough": "Queens"
+ },
+ {
+  "name": "Rego Park",
+  "borough": "Queens"
+ },
+ {
+  "name": "Far Rockaway",
+  "borough": "Queens"
+ },
+ {
+  "name": "Riverdale",
+  "borough": "Bronx"
+ },
+ {
+  "name": "Mott Haven",
+  "borough": "Bronx"
+ },
+ {
+  "name": "Hunts Point",
+  "borough": "Bronx"
+ },
+ {
+  "name": "Co-op City",
+  "borough": "Bronx"
+ },
+ {
+  "name": "City Island",
+  "borough": "Bronx"
+ },
+ {
+  "name": "St. George",
+  "borough": "Staten Island"
+ },
+ {
+  "name": "Tottenville",
+  "borough": "Staten Island"
+ },
+ {
+  "name": "Great Kills",
+  "borough": "Staten Island"
  }
 ]

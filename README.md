@@ -1,6 +1,6 @@
 # When a neighborhood got its name
 
-Forty-eight New York City neighborhood names and when each one showed up in The New York Times: a decade-by-decade map, an articles-per-decade chart and the first headline or summary to use each name.
+Sixty-three New York City neighborhood names and when each one showed up in The New York Times: a decade-by-decade map, an articles-per-decade chart and the first headline or summary to use each name.
 
 - `index.html`: the page (d3 from jsDelivr, house.css from the experiments site)
 - `methodology.html`: sources, rules and every search

@@ -65,8 +65,23 @@ FIRST = {  # name: (date, headline fragment, source list or None for raw oldest,
  'Gowanus': ('1851-10-18', 'TEMPERANCE MASS MEETING', None, True),
  'Astoria': ('1865-04-04', 'THE VOICE OF THE PEOPLE', None, True),
  'Long Island City': ('1870-02-20', 'The New Long Island City', None, True),
+ 'Greenpoint': ('1860-01-02', 'DIED', None, False),
+ 'Crown Heights': ('1912-05-04', "JESUITS' BROOKLYN COLLEGE", None, True),
+ 'Flatbush': ('1851-09-20', 'BROOKLYN', None, True),
+ 'Kensington': ('1860-01-23', 'MARINE INTELLIGENCE', None, False),
+ 'Bay Ridge': ('1859-08-26', 'BROOKLYN INTELLIGENCE', None, True),
+ 'Dyker Heights': ('1900-03-17', 'EXCITING UP-TOWN FIRE', None, False),
+ 'Bensonhurst': ('1897-08-13', 'TROLLEY CAR COLLISION', None, True),
+ 'Brownsville': ('1860-03-28', 'NEWS OF THE DAY', None, False),
+ 'East New York': ('1852-09-07', 'BROOKLYN CITY', None, False),
+ 'Canarsie': ('1852-07-23', 'BROOKLYN CITY', None, True),
+ 'Sheepshead Bay': ('1885-07-02', 'MISS WOODFORD BEATEN', None, True),
+ 'Brighton Beach': ('1878-07-02', 'ANOTHER CONEY ISLAND RAILROAD', None, True),
+ 'Coney Island': ('1860-03-29', 'THE MURDERS AT SEA', None, False),
+ 'Starrett City': ('1972-07-16', 'Housing for 24,000', None, True),
+ 'Jackson Heights': ('1917-04-04', 'Rifle Club at Jackson Heights', None, True),
 }
-PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Park Slope', 'Williamsburg', 'Harlem', 'Bushwick', 'Upper West Side', 'Upper East Side', 'Greenwich Village', 'Lower East Side', 'Brooklyn Heights', 'Bedford-Stuyvesant', 'Red Hook', 'Gowanus', 'Astoria', 'Long Island City', 'Manhattan Valley', 'Stuyvesant Heights',
+PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Park Slope', 'Williamsburg', 'Harlem', 'Bushwick', 'Upper West Side', 'Upper East Side', 'Greenwich Village', 'Lower East Side', 'Brooklyn Heights', 'Bedford-Stuyvesant', 'Red Hook', 'Gowanus', 'Astoria', 'Long Island City', 'Greenpoint', 'Crown Heights', 'Flatbush', 'Kensington', 'Bay Ridge', 'Dyker Heights', 'Bensonhurst', 'Brownsville', 'East New York', 'Canarsie', 'Sheepshead Bay', 'Brighton Beach', 'Coney Island', 'Jackson Heights', 'Manhattan Valley', 'Stuyvesant Heights',
                     'Hunters Point', 'Port Morris', 'Dutch Kills', 'Ditmas Park'}
 NOTES = {
  'SoHo': "All 36 matches before 1970 are London's Soho or other uses, judging by their headlines and summaries.",
@@ -98,6 +113,16 @@ NOTES = {
  'Red Hook': 'Some matches may be Red Hook in Dutchess County; the Brooklyn filter cuts most of them.',
  'Astoria': 'Some matches are likely the Waldorf-Astoria hotel rather than the Queens neighborhood.',
  'Long Island City': 'Long Island City was chartered as its own city in 1870, the year of the first headline. The pre-1950 count hit the API ceiling of 10,000, so the true figure is higher.',
+ 'Greenpoint': 'No early headline or summary shows the name. The date is the earliest search match.',
+ 'Kensington': "No early headline or summary shows the name, and many early matches are likely London's Kensington. The date is the earliest search match.",
+ 'Dyker Heights': 'No early headline or summary shows the name. The date is the earliest search match.',
+ 'Brownsville': 'No early headline or summary shows the name, and some early matches may be Brownsville, Texas. The date is the earliest search match.',
+ 'East New York': 'No early headline or summary shows the name. The date is the earliest search match.',
+ 'Coney Island': 'No early headline or summary among the oldest matches shows the name. The date is the earliest search match. The pre-1950 count hit the API ceiling of 10,000.',
+ 'Flatbush': 'In 1851 Flatbush was its own town, outside the City of Brooklyn. The pre-1950 count hit the API ceiling of 10,000.',
+ 'Crown Heights': 'The 1912 headline puts a Jesuit college "on Crown Heights."',
+ 'Starrett City': 'The 1972 summary describes the start of construction on the housing development that gave the area its name.',
+ 'Sheepshead Bay': 'The earliest confirmed headlines are about the racetrack at Sheepshead Bay.',
  'Hunters Point': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Dutch Kills': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Port Morris': 'No early headline or summary shows the name. The date is the earliest search match.',
@@ -130,7 +155,8 @@ for name, (date, frag, src, conf) in FIRST.items():
     out['names'][name] = {'category': cat, 'note': NOTES.get(name, ''),
         'first': {'date': d['date'], 'headline': d['headline'].split(';')[0].strip(), 'url': d['url'],
                   'section': d.get('section', ''), 'confirmed': conf}}
-missing = set(raw) - set(FIRST) - set(DROP)
+PENDING = {'Sunset Park'}  # needs a date-bounded search; pre-1950 matches are other Sunset Parks
+missing = set(raw) - set(FIRST) - set(DROP) - PENDING
 assert not missing, missing
 json.dump(out, open(os.path.join(ROOT, 'build', 'review.json'), 'w'), indent=1, ensure_ascii=False)
 for n, v in out['names'].items(): print(f"{v['category']:8s} {n:36s} {v['first']['date']} {'' if v['first']['confirmed'] else '(earliest match)'}")
