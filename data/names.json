@@ -1104,6 +1104,298 @@
    "category": "old",
    "note": "In 1853 Bushwick was a separate town; the headline covers plans to consolidate it with Brooklyn and Williamsburg.",
    "capped": []
+  },
+  {
+   "name": "Upper West Side",
+   "borough": "Manhattan",
+   "lat": 40.787,
+   "lon": -73.9754,
+   "query": "\"Upper West Side\" Manhattan",
+   "decades": {
+    "pre-1950": 1157,
+    "1950s": 151,
+    "1960s": 222,
+    "1970s": 711,
+    "1980s": 1764,
+    "1990s": 3663,
+    "2000s": 4393,
+    "2010s": 3304,
+    "2020s": 1877
+   },
+   "total": 17242,
+   "first": {
+    "date": "1900-01-21",
+    "headline": "IN THE REAL ESTATE FIELD",
+    "url": "https://www.nytimes.com/1900/01/21/archives/in-the-real-estate-field-the-weeks-large-transactions-point-to.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Upper East Side",
+   "borough": "Manhattan",
+   "lat": 40.7736,
+   "lon": -73.9566,
+   "query": "\"Upper East Side\" Manhattan",
+   "decades": {
+    "pre-1950": 654,
+    "1950s": 70,
+    "1960s": 175,
+    "1970s": 566,
+    "1980s": 1489,
+    "1990s": 3578,
+    "2000s": 5215,
+    "2010s": 3609,
+    "2020s": 1947
+   },
+   "total": 17303,
+   "first": {
+    "date": "1902-10-20",
+    "headline": "POLICE KNEW NOTHING OF LIVELY STREET ROW.",
+    "url": "https://www.nytimes.com/1902/10/20/archives/police-knew-nothing-of-lively-street-row-two-men-were-stabbed-and.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Greenwich Village",
+   "borough": "Manhattan",
+   "lat": 40.7336,
+   "lon": -74.0027,
+   "query": "\"Greenwich Village\" Manhattan",
+   "decades": {
+    "pre-1950": 1384,
+    "1950s": 369,
+    "1960s": 752,
+    "1970s": 1264,
+    "1980s": 1843,
+    "1990s": 3448,
+    "2000s": 6104,
+    "2010s": 4152,
+    "2020s": 1140
+   },
+   "total": 20456,
+   "first": {
+    "date": "1900-01-02",
+    "headline": "CITY'S GREETING TO 1900",
+    "url": "https://www.nytimes.com/1900/01/02/archives/citys-greeting-to-1900-new-years-day-brightened-by-snow-and-crisp.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Lower East Side",
+   "borough": "Manhattan",
+   "lat": 40.715,
+   "lon": -73.9843,
+   "query": "\"Lower East Side\" Manhattan",
+   "decades": {
+    "pre-1950": 1984,
+    "1950s": 454,
+    "1960s": 724,
+    "1970s": 1040,
+    "1980s": 1293,
+    "1990s": 2323,
+    "2000s": 4754,
+    "2010s": 3922,
+    "2020s": 1302
+   },
+   "total": 17796,
+   "first": {
+    "date": "1898-11-05",
+    "headline": "ROOSEVELT TOURS THE CITY",
+    "url": "https://www.nytimes.com/1898/11/05/archives/roosevelt-tours-the-city-he-speaks-at-eight-meetings-in-manhattan.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Brooklyn Heights",
+   "borough": "Brooklyn",
+   "lat": 40.696,
+   "lon": -73.995,
+   "query": "\"Brooklyn Heights\" Brooklyn",
+   "decades": {
+    "pre-1950": 1891,
+    "1950s": 405,
+    "1960s": 533,
+    "1970s": 1364,
+    "1980s": 1248,
+    "1990s": 1767,
+    "2000s": 2724,
+    "2010s": 1641,
+    "2020s": 479
+   },
+   "total": 12052,
+   "first": {
+    "date": "1854-05-01",
+    "headline": "BROOKLYN CITY.",
+    "url": "https://www.nytimes.com/1854/05/01/archives/brooklyn-city-the-accident-on-brooklyn-heights-signs-of-the-times.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Bedford-Stuyvesant",
+   "borough": "Brooklyn",
+   "lat": 40.6872,
+   "lon": -73.9418,
+   "query": "\"Bedford-Stuyvesant\" Brooklyn",
+   "decades": {
+    "pre-1950": 190,
+    "1950s": 401,
+    "1960s": 1512,
+    "1970s": 1578,
+    "1980s": 1069,
+    "1990s": 1498,
+    "2000s": 1921,
+    "2010s": 1551,
+    "2020s": 778
+   },
+   "total": 10498,
+   "first": {
+    "date": "1927-06-05",
+    "headline": "CROSSTOWN SUBWAY URGED FOR BROOKLYN",
+    "url": "https://www.nytimes.com/1927/06/05/archives/crosstown-subway-urged-for-brooklyn-dr-cadman-and-rabbi-gross-speak.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "Earlier matches from 1901 on could not be checked. The 1927 summary describes a meeting of a Bedford-Stuyvesant group.",
+   "capped": []
+  },
+  {
+   "name": "Red Hook",
+   "borough": "Brooklyn",
+   "lat": 40.6755,
+   "lon": -74.01,
+   "query": "\"Red Hook\" Brooklyn",
+   "decades": {
+    "pre-1950": 1198,
+    "1950s": 283,
+    "1960s": 206,
+    "1970s": 316,
+    "1980s": 217,
+    "1990s": 552,
+    "2000s": 1266,
+    "2010s": 1285,
+    "2020s": 347
+   },
+   "total": 5670,
+   "first": {
+    "date": "1851-11-28",
+    "headline": "BROOKLYN CITY.",
+    "url": "https://www.nytimes.com/1851/11/28/archives/brooklyn-city-thanksgiving-day-plank-roads-temperance-in-flushing.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "Some matches may be Red Hook in Dutchess County; the Brooklyn filter cuts most of them.",
+   "capped": []
+  },
+  {
+   "name": "Gowanus",
+   "borough": "Brooklyn",
+   "lat": 40.6733,
+   "lon": -73.99,
+   "query": "\"Gowanus\" Brooklyn",
+   "decades": {
+    "pre-1950": 882,
+    "1950s": 215,
+    "1960s": 147,
+    "1970s": 177,
+    "1980s": 132,
+    "1990s": 358,
+    "2000s": 919,
+    "2010s": 1485,
+    "2020s": 285
+   },
+   "total": 4600,
+   "first": {
+    "date": "1851-10-18",
+    "headline": "BROOKLYN.",
+    "url": "https://www.nytimes.com/1851/10/18/archives/brooklyn-temperance-mass-meeting-dedication-of-st-johns-church.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Astoria",
+   "borough": "Queens",
+   "lat": 40.7644,
+   "lon": -73.9235,
+   "query": "\"Astoria\" Queens",
+   "decades": {
+    "pre-1950": 1675,
+    "1950s": 885,
+    "1960s": 676,
+    "1970s": 640,
+    "1980s": 539,
+    "1990s": 1055,
+    "2000s": 1829,
+    "2010s": 1653,
+    "2020s": 402
+   },
+   "total": 9354,
+   "first": {
+    "date": "1865-04-04",
+    "headline": "THE VOICE OF THE PEOPLE.",
+    "url": "https://www.nytimes.com/1865/04/04/archives/the-voice-of-the-people-how-the-great-news-was-received-and.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "Some matches are likely the Waldorf-Astoria hotel rather than the Queens neighborhood.",
+   "capped": []
+  },
+  {
+   "name": "Long Island City",
+   "borough": "Queens",
+   "lat": 40.747,
+   "lon": -73.94,
+   "query": "\"Long Island City\" Queens",
+   "decades": {
+    "pre-1950": 10000,
+    "1950s": 3336,
+    "1960s": 1963,
+    "1970s": 1801,
+    "1980s": 1702,
+    "1990s": 2031,
+    "2000s": 3723,
+    "2010s": 3244,
+    "2020s": 780
+   },
+   "total": 28580,
+   "first": {
+    "date": "1870-02-20",
+    "headline": "The New Long Island City--Provisions of the Proposed Charter.",
+    "url": "https://www.nytimes.com/1870/02/20/archives/the-new-long-island-cityprovisions-of-the-proposed-charter.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "Long Island City was chartered as its own city in 1870, the year of the first headline. The pre-1950 count hit the API ceiling of 10,000, so the true figure is higher.",
+   "capped": [
+    "pre-1950"
+   ]
   }
  ],
  "findings": [

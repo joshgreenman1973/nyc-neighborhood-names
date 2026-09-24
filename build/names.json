@@ -158,5 +158,45 @@
  {
   "name": "Bushwick",
   "borough": "Brooklyn"
+ },
+ {
+  "name": "Upper West Side",
+  "borough": "Manhattan"
+ },
+ {
+  "name": "Upper East Side",
+  "borough": "Manhattan"
+ },
+ {
+  "name": "Greenwich Village",
+  "borough": "Manhattan"
+ },
+ {
+  "name": "Lower East Side",
+  "borough": "Manhattan"
+ },
+ {
+  "name": "Brooklyn Heights",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Bedford-Stuyvesant",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Red Hook",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Gowanus",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Astoria",
+  "borough": "Queens"
+ },
+ {
+  "name": "Long Island City",
+  "borough": "Queens"
  }
 ]
