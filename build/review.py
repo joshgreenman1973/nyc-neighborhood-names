@@ -6,7 +6,8 @@ earliest search match is used and marked confirmed=False.
 PRE1950_ACCEPTED: names whose pre-1950 matches are taken as this place.
 Category rule (applied in code below, stated on the methodology page):
   - pre-1950 use accepted: 'revived' if the quietest decade of the 1950s-70s
-    had <= 5% of the name's busiest decade since 1950, else 'old'.
+    had no more than 20 articles and no more than 5% of the name's busiest
+    decade since 1950, else 'old'.
   - otherwise: 'flop' if no decade since 1950 reached 50 articles, else 'coined'.
 """
 import json, os
@@ -50,8 +51,9 @@ FIRST = {  # name: (date, headline fragment, source list or None for raw oldest,
  'SoBro': ('1994-04-10', 'Antiquing of the South Bronx', None, True),
  'Piano District': ('2015-03-25', 'Mott Haven, the Bronx', None, False),
  'Port Morris': ('1900-03-30', 'MANY BILLS PASSED', None, False),
+ 'Park Slope': ('1897-11-26', 'BIG BILL FOR BROOKLYN', None, True),
 }
-PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Manhattan Valley', 'Stuyvesant Heights',
+PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Park Slope', 'Manhattan Valley', 'Stuyvesant Heights',
                     'Hunters Point', 'Port Morris', 'Dutch Kills', 'Ditmas Park'}
 NOTES = {
  'SoHo': "All 36 matches before 1970 are London's Soho or other uses, judging by their headlines and summaries.",
@@ -73,6 +75,7 @@ NOTES = {
  'Columbia Street Waterfront District': 'A 2005 profile describes the Columbia Street neighborhood without the full name in its summary.',
  'Ditmas Park': 'No early headline or summary shows the full name. The date is the earliest search match.',
  'Greenwood Heights': 'A 1920 headline mentions a Greenwood Heights church, and a 1987 real estate column is titled "Capitalizing On a Name." Neither summary places them.',
+ 'Park Slope': 'The 1897 headline calls it "the Park Slope," with the article.',
  'Hunters Point': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Dutch Kills': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Port Morris': 'No early headline or summary shows the name. The date is the earliest search match.',
@@ -99,7 +102,7 @@ for name, (date, frag, src, conf) in FIRST.items():
     dec = raw[name]['decades']; post = [dec[k] for k in DECS[1:]]; peak = max(post)
     if name in PRE1950_ACCEPTED:
         quiet = min(dec['1950s'], dec['1960s'], dec['1970s'])
-        cat = 'revived' if quiet <= 0.05 * peak else 'old'
+        cat = 'revived' if quiet <= 20 and quiet <= 0.05 * peak else 'old'
     else:
         cat = 'flop' if peak < 50 else 'coined'
     out['names'][name] = {'category': cat, 'note': NOTES.get(name, ''),

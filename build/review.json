@@ -385,6 +385,17 @@
     "section": "Archives",
     "confirmed": false
    }
+  },
+  "Park Slope": {
+   "category": "old",
+   "note": "The 1897 headline calls it \"the Park Slope,\" with the article.",
+   "first": {
+    "date": "1897-11-26",
+    "headline": "BIG BILL FOR BROOKLYN",
+    "url": "https://www.nytimes.com/1897/11/26/archives/big-bill-for-brooklyn-a-thousand-householders-on-the-park-slope.html",
+    "section": "Archives",
+    "confirmed": true
+   }
   }
  }
 }

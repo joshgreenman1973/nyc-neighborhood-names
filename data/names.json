@@ -952,6 +952,34 @@
    },
    "category": "old",
    "note": "No early headline or summary shows the name. The date is the earliest search match."
+  },
+  {
+   "name": "Park Slope",
+   "borough": "Brooklyn",
+   "lat": 40.672,
+   "lon": -73.978,
+   "query": "\"Park Slope\" Brooklyn",
+   "decades": {
+    "pre-1950": 643,
+    "1950s": 124,
+    "1960s": 216,
+    "1970s": 594,
+    "1980s": 807,
+    "1990s": 2137,
+    "2000s": 4700,
+    "2010s": 3171,
+    "2020s": 828
+   },
+   "total": 13220,
+   "first": {
+    "date": "1897-11-26",
+    "headline": "BIG BILL FOR BROOKLYN",
+    "url": "https://www.nytimes.com/1897/11/26/archives/big-bill-for-brooklyn-a-thousand-householders-on-the-park-slope.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "The 1897 headline calls it \"the Park Slope,\" with the article."
   }
  ],
  "findings": [

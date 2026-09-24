@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>When a neighborhood got its name</title>
-<meta name="description" content="Thirty-four New York City neighborhood names and the decade each one arrived in The New York Times.">
+<meta name="description" content="Thirty-five New York City neighborhood names and the decade each one arrived in The New York Times.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://joshgreenman1973.github.io/experiments/house-style/house.css">
@@ -23,7 +23,12 @@
 #map .water{fill:url(#halftone)}
 #map .nj{fill:#e6e8e2;stroke:var(--hair);stroke-width:.6}
 #map .land{fill:var(--paper);stroke:#9aa39c;stroke-width:.9}
-#map .nta{fill:none;stroke:var(--hair);stroke-width:.5;stroke-dasharray:2 2}
+#map .nta{fill:transparent;stroke:var(--hair);stroke-width:.5;stroke-dasharray:2 2;cursor:pointer}
+#map .nta.named:hover{fill:var(--c);fill-opacity:.1}
+#map .nta.on{fill:var(--c);fill-opacity:.18;stroke:var(--c);stroke-width:1.2;stroke-dasharray:none}
+#map .land{cursor:pointer}
+.yr{font-family:var(--display);font-weight:700;font-size:2.6rem;line-height:1;letter-spacing:-.03em;color:var(--c);margin:4px 0 2px}
+.yrl{font-size:var(--t-micro);letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--ink2);margin-bottom:12px}
 #map .park{fill:var(--ink2c);opacity:.16;mix-blend-mode:multiply}
 #map .boro{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.42em;text-transform:uppercase;fill:var(--ink2);opacity:.42}
 #map .river{font-family:var(--sans);font-style:normal;font-weight:600;font-size:10px;letter-spacing:.3em;text-transform:uppercase;fill:#6d8290;opacity:.8}
@@ -113,7 +118,7 @@
       </svg>
     </div>
     <h1>When a neighborhood got its name</h1>
-    <p class="sub">Thirty-four New York City neighborhood names and when each one showed up in The New York Times. Some are new names that stuck. Some were pushed and never caught on. A few are old names that faded and came back.</p>
+    <p class="sub">Thirty-five New York City neighborhood names and when each one showed up in The New York Times. Some are new names that stuck. Some were pushed and never caught on. A few are old names that faded and came back.</p>
     <p class="src">Data provided by <a href="https://developer.nytimes.com/docs/articlesearch-product/1/overview">The New York Times</a> Article Search API, 1851 to <span id="asof"></span></p>
   </header>
   <div class="capline" id="capline"></div>
@@ -132,7 +137,7 @@
     <aside class="side">
       <div class="colhead"><span>Reading the map</span></div>
       <div class="pad">
-        <p class="lede">Each name sits roughly where the neighborhood is and is sized by how many Times articles used it that decade. Faint names had not appeared yet. Press play to watch them arrive, or click any name.</p>
+        <p class="lede">Click any neighborhood to see when its name first appeared in the Times. Each name is sized by how many Times articles used it that decade; faint names had not appeared yet. Press play to watch them arrive.</p>
         <div class="legend vert" id="legend"></div>
       </div>
       <div class="colhead"><span id="cardhead">Most used this decade</span></div>
@@ -221,7 +226,7 @@ Promise.all(['data/names.json','data/boro_clip.geojson','data/nta.geojson','data
   svg.append('g').selectAll('path').data(NJ.features).join('path').attr('class','nj').attr('d',path);
   svg.append('g').selectAll('path').data(G.features).join('path').attr('class','land').attr('d',path);
   svg.append('g').selectAll('path').data(PK.features).join('path').attr('class','park').attr('d',path);
-  svg.append('g').selectAll('path').data(NTA.features).join('path').attr('class','nta').attr('d',path);
+  const ntaSel=svg.append('g').selectAll('path').data(NTA.features).join('path').attr('class','nta').attr('d',path);
   const BL={Manhattan:[-73.9735,40.7835],Brooklyn:[-73.952,40.648],Queens:[-73.905,40.733],'The Bronx':[-73.908,40.822],'New Jersey':[-74.05,40.752]};
   svg.append('g').selectAll('text').data(Object.entries(BL)).join('text').attr('class','boro')
     .attr('x',d=>proj(d[1])[0]).attr('y',d=>proj(d[1])[1]).attr('text-anchor','middle').text(d=>d[0]);
@@ -231,6 +236,17 @@ Promise.all(['data/names.json','data/boro_clip.geojson','data/nta.geojson','data
 
   const sz=d3.scaleSqrt().domain([0,maxH]).range(NARROW?[9.5,26]:[10,40]);
   const items=N.map(n=>{const [x,y]=proj([n.lon,n.lat]);return {n,x,y};});
+  // each neighborhood outline that contains a name's anchor belongs to that name
+  NTA.features.forEach(f=>{const hits=N.filter(n=>d3.geoContains(f,[n.lon,n.lat]));f.nms=hits.map(n=>n.name);f.nm=hits.length===1?hits[0].name:null;f.cat=hits.length===1?hits[0].category:hits.length?'coined':null;});
+  const areaOf={};NTA.features.forEach(f=>f.nms.forEach(n=>areaOf[n]=f.properties.ntaname));
+  ntaSel.attr('class',f=>'nta'+(f.nms.length?' named cat-'+f.cat:''));
+  ntaSel.append('title').text(f=>f.nms.length?f.nms.join(', ')+': click to see when the name first appeared':'');
+  // click anywhere on land: the named outline if there is one, else the nearest name within reach
+  function pick(e){const [mx,my]=d3.pointer(e,svg.node());let best=null,bd=1e9;
+    for(const it of items){const d=Math.hypot(it.x-mx,it.y-my);if(d<bd){bd=d;best=it;}}
+    if(best&&bd<(NARROW?60:90))select(best.n.name);}
+  ntaSel.on('click',(e,f)=>{if(f.nm)select(f.nm);else pick(e);});
+  svg.selectAll('.land').on('click',pick);
   const gL=svg.append('g'), gD=svg.append('g'), gH=svg.append('g'), gT=svg.append('g');
   const leads=gL.selectAll('line').data(items).join('line').attr('class',d=>'lead cat-'+d.n.category);
   const dots=gD.selectAll('circle').data(items).join('circle').attr('class',d=>'dot cat-'+d.n.category).attr('cx',d=>d.x).attr('cy',d=>d.y);
@@ -284,14 +300,16 @@ Promise.all(['data/names.json','data/boro_clip.geojson','data/nta.geojson','data
     const n=N.find(x=>x.name===name); const mx=d3.max(DECS,(d,i)=>cnt(n,i))||1;
     document.getElementById('cardhead').textContent='Selected name';
     document.getElementById('card').innerHTML=`<div class="card cat-${n.category}"><h3>${esc(n.name)}</h3><div class="meta" style="color:var(--c)">${CATS[n.category]} · ${esc(n.borough)}</div>`+
+      (n.first?`<div class="yr">${n.first.date.slice(0,4)}${n.first.confirmed?'':'*'}</div><div class="yrl">${n.first.confirmed?'First used in The New York Times':'Earliest match in The New York Times'}</div>`:'')+
       (n.first?`<div class="quote cat-${n.category}"><a href="${esc(n.first.url)}" target="_blank" rel="noopener">${esc(n.first.headline||'(untitled)')}</a><div>${n.first.confirmed?'First use':'Earliest match'} · ${fdate(n.first.date)}</div></div>`:'')+
       `<div class="spark">${DECS.map((d,i)=>`<i class="${i===cur?'on':''}" style="height:${Math.max(1,64*Math.sqrt(cnt(n,i)/mx))}px" title="${DLBL[i]}: ${fmt(cnt(n,i))}"></i>`).join('')}</div><div class="sparkax"><span>Pre-1950</span><span>2020s</span></div>`+
       `<p class="lede">${fmt(cnt(n,cur))} articles ${DLBL[cur]==='<1950'?'before 1950':'in the '+DLBL[cur]}; ${fmt(n.total)} in all.</p>`+
+      (areaOf[n.name]?`<p class="lede" style="font-size:.82rem;color:var(--ink2)">Shaded: the city planning area ${esc(areaOf[n.name])}, which may not match the neighborhood's own boundary.</p>`:'')+
       `<button class="linkb" id="more">Full details</button> · <button class="linkb" id="back">Back to the top ten</button></div>`;
     document.getElementById('more').onclick=()=>open(n.name);
-    document.getElementById('back').onclick=()=>{selName=null;labels.classed('sel',false);sidebar();};
+    document.getElementById('back').onclick=()=>{selName=null;labels.classed('sel',false);ntaSel.classed('on',false);sidebar();};
   }
-  function select(name){selName=name;labels.classed('sel',d=>d.n.name===name);card(name);
+  function select(name){selName=name;labels.classed('sel',d=>d.n.name===name);ntaSel.classed('on',f=>f.nms.includes(name));card(name);
     if(innerWidth<980)document.getElementById('card').scrollIntoView({behavior:'smooth',block:'nearest'});}
   const sl=document.getElementById('dec'); sl.oninput=()=>place(+sl.value);
   let timer=null; const pb=document.getElementById('play');
