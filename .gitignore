@@ -1,0 +1,4 @@
+data/cache/
+data/raw.json
+data/followups.json
+.DS_Store

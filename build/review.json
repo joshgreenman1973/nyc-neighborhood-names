@@ -1,0 +1,390 @@
+{
+ "drop": {
+  "NoMad": "the ordinary word \"nomad\" swamps the search in every decade",
+  "Two Bridges": "the phrase \"two bridges\" turns up in bridge and transit stories in every decade"
+ },
+ "findings": [
+  "<b>Brooklyn's brownstone names came first.</b> Cobble Hill (1960), Boerum Hill (1966) and Carroll Gardens (1966) show up in Times headlines and summaries in the 1960s. Manhattan's loft-district names followed in the 1970s: SoHo in 1970, NoHo in 1975 and Tribeca in 1976.",
+  "<b>SoHo went from nothing to everywhere.</b> All 10 matching articles from the 1960s are about London. The count rose to 649 in the 1970s and 4,921 in the 2000s.",
+  "<b>Most portmanteau names flopped.</b> BoCoCa, ProCro, SoBro, SoHa and the Piano District never reached 50 articles in any decade. ProCro first appeared in April 2011, in a story about an assemblyman's bill to penalize brokers who invent neighborhood names.",
+  "<b>SoHa kept moving.</b> The Times put it at 104th to 107th Streets in 1996, south of Columbia in 1999 and 96th to 113th Streets in 2002.",
+  "<b>Some old names faded, then came back.</b> Hell's Kitchen matched 113 articles before 1950 and nine in the 1950s, then 562 in the 2000s. Ditmas Park drew one article in each of the 1950s and 1960s, then 159 in the 1990s.",
+  "<b>Hudson Yards started from zero.</b> No article matches before 2001. With more than three years still to go, the 2020s already equal the 2010s, at 410 articles each."
+ ],
+ "names": {
+  "SoHo": {
+   "category": "coined",
+   "note": "All 36 matches before 1970 are London's Soho or other uses, judging by their headlines and summaries.",
+   "first": {
+    "date": "1970-05-11",
+    "headline": "Neighborhoods: SoHo Is Artists' Last Resort",
+    "url": "https://www.nytimes.com/1970/05/11/archives/neighborhoods-soho-is-artists-last-resort-neighborhoods-soho-is.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Tribeca": {
+   "category": "coined",
+   "note": "An October 1975 article on SoHo already matches the search, but its summary doesn't show the name.",
+   "first": {
+    "date": "1976-06-12",
+    "headline": "LOFTS IN TRIBECA WIN ZONE CHANGE",
+    "url": "https://www.nytimes.com/1976/06/12/archives/lofts-in-tribeca-win-zone-change-city-votes-residential-use-in-area.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "NoHo": {
+   "category": "coined",
+   "note": "Arts listings from May 1975 match the search, but their summaries do not show the name.",
+   "first": {
+    "date": "1975-10-29",
+    "headline": "About Real Estate",
+    "url": "https://www.nytimes.com/1975/10/29/archives/about-real-estate-zoning-revisions-to-expand-loft-conversions-are.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Nolita": {
+   "category": "coined",
+   "note": "The 1996 summary spells it NoLiTa, for North of Little Italy. A 1977 match is a death notice, not the place.",
+   "first": {
+    "date": "1996-11-14",
+    "headline": "East of SoHo, A Street of Jewel Boxes",
+    "url": "https://www.nytimes.com/1996/11/14/garden/east-of-soho-a-street-of-jewel-boxes.html",
+    "section": "Home & Garden",
+    "confirmed": true
+   }
+  },
+  "Alphabet City": {
+   "category": "coined",
+   "note": "A 1984 review of the film \"Alphabet City\" comes first. A 1941 match is about something else.",
+   "first": {
+    "date": "1987-05-17",
+    "headline": "WILL IT BE LOISAIDA OR ALPHABET CITY?",
+    "url": "https://www.nytimes.com/1987/05/17/realestate/will-it-be-loisaida-or-alphabet-city-two-visions-vie-in-the-east-village.html",
+    "section": "Real Estate",
+    "confirmed": true
+   }
+  },
+  "Loisaida": {
+   "category": "flop",
+   "note": "",
+   "first": {
+    "date": "1981-05-27",
+    "headline": "The Real Loisaida",
+    "url": "https://www.nytimes.com/1981/05/27/garden/l-the-real-loisaida-133881.html",
+    "section": "Home & Garden",
+    "confirmed": true
+   }
+  },
+  "East Village": {
+   "category": "coined",
+   "note": "The 1963 headline lists \"the East Village\" among six affordable Manhattan sections. A few earlier matches could not be checked.",
+   "first": {
+    "date": "1963-07-28",
+    "headline": "CITY TOWN HOUSES OFTEN A BARGAIN",
+    "url": "https://www.nytimes.com/1963/07/28/archives/city-town-houses-often-a-bargain-they-arent-in-fashionable-areas.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Hudson Square": {
+   "category": "coined",
+   "note": "Twelve matches before 1950 could not be checked, so they are not counted as this neighborhood.",
+   "first": {
+    "date": "1989-09-17",
+    "headline": "COMMERCIAL PROPERTY: Hudson Square",
+    "url": "https://www.nytimes.com/1989/09/17/realestate/commercial-property-hudson-square-offices-in-a-former-industrial-area.html",
+    "section": "Real Estate",
+    "confirmed": true
+   }
+  },
+  "Meatpacking District": {
+   "category": "coined",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1981-05-01",
+    "headline": "A FLOURISHING AERIE OF FOLK AND TRADITIONAL",
+    "url": "https://www.nytimes.com/1981/05/01/arts/a-flourishing-aerie-of-folk-and-traditional.html",
+    "section": "Arts",
+    "confirmed": false
+   }
+  },
+  "Flatiron District": {
+   "category": "coined",
+   "note": "",
+   "first": {
+    "date": "1985-07-25",
+    "headline": "LIVING IN THE EMERGING FLATIRON DISTRICT",
+    "url": "https://www.nytimes.com/1985/07/25/garden/living-in-the-emerging-flatiron-district.html",
+    "section": "Home & Garden",
+    "confirmed": true
+   }
+  },
+  "Hudson Yards": {
+   "category": "coined",
+   "note": "The first matches, from 2001 and 2002, concern the Olympic bid for the same West Side rail yards.",
+   "first": {
+    "date": "2003-03-11",
+    "headline": "Midtown's Final Frontier",
+    "url": "https://www.nytimes.com/2003/03/11/opinion/midtown-s-final-frontier.html",
+    "section": "Opinion",
+    "confirmed": true
+   }
+  },
+  "SoHa": {
+   "category": "flop",
+   "note": "The Times placed SoHa in three different stretches: 104th to 107th Streets (1996), south of Columbia (1999) and 96th to 113th Streets (2002).",
+   "first": {
+    "date": "1996-11-03",
+    "headline": "SoHa Loses Blight, Gains Acronym",
+    "url": "https://www.nytimes.com/1996/11/03/nyregion/soha-loses-blight-gains-acronym.html",
+    "section": "New York",
+    "confirmed": true
+   }
+  },
+  "Manhattan Valley": {
+   "category": "revived",
+   "note": "The 1890s headlines concern a Riverside Drive viaduct over a valley near 125th Street, not the blocks that carry the name today.",
+   "first": {
+    "date": "1895-03-20",
+    "headline": "GREAT WEST SIDE WINS",
+    "url": "https://www.nytimes.com/1895/03/20/archives/great-west-side-wins-to-be-no-rapid-transit-viaduct-below-manhattan.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Hell's Kitchen": {
+   "category": "revived",
+   "note": "",
+   "first": {
+    "date": "1905-07-16",
+    "headline": "\"Seeing Manhattan\": Saturday Night in \"Hell's Kitchen\"",
+    "url": "https://www.nytimes.com/1905/07/16/archives/seeing-manhattan-saturday-night-in-hells-kitchen.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Dumbo": {
+   "category": "coined",
+   "note": "Earlier matches are mostly the Disney elephant. The 1997 summary calls the waterfront between the bridges \"dubbed Dumbo.\"",
+   "first": {
+    "date": "1997-10-27",
+    "headline": "A Private Eye",
+    "url": "https://www.nytimes.com/1997/10/27/arts/a-private-eye-art-flourishes-on-a-grimy-brooklyn-waterfront.html",
+    "section": "Arts",
+    "confirmed": true
+   }
+  },
+  "Boerum Hill": {
+   "category": "coined",
+   "note": "",
+   "first": {
+    "date": "1966-03-20",
+    "headline": "Brooklyn Renewal Is an Uphill Fight",
+    "url": "https://www.nytimes.com/1966/03/20/archives/brooklyn-renewal-is-an-uphill-fight-mortgages-are-main-hurdle-in.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Cobble Hill": {
+   "category": "coined",
+   "note": "Matches before 1950 are mostly a Cobble Hill in the Adirondacks, so they are not counted.",
+   "first": {
+    "date": "1960-02-28",
+    "headline": "The Restoration of Cobble Hill: Pride Plus Action Barred Slum",
+    "url": "https://www.nytimes.com/1960/02/28/archives/the-restoration-of-cobble-hill-pride-plus-action-barred-slum-cobble.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Carroll Gardens": {
+   "category": "coined",
+   "note": "",
+   "first": {
+    "date": "1966-12-12",
+    "headline": "Bedford-Stuyvesant Blocks Proposed as Historic Area",
+    "url": "https://www.nytimes.com/1966/12/12/archives/bedfordstuyvesant-blocks-proposed-as-historic-area.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "BoCoCa": {
+   "category": "flop",
+   "note": "",
+   "first": {
+    "date": "2004-03-14",
+    "headline": "NEIGHBORHOOD REPORT: BROWNSTONE BROOKLYN",
+    "url": "https://www.nytimes.com/2004/03/14/nyregion/neighborhood-report-brownstone-brooklyn-newest-entry-neighborhood-scrabble.html",
+    "section": "New York",
+    "confirmed": true
+   }
+  },
+  "Vinegar Hill": {
+   "category": "coined",
+   "note": "Earlier matches from 1970 on exist, but their summaries do not show the name.",
+   "first": {
+    "date": "1998-02-01",
+    "headline": "NEIGHBORHOOD REPORT: VINEGAR HILL",
+    "url": "https://www.nytimes.com/1998/02/01/nyregion/neighborhood-report-vinegar-hill-the-2d-battle-of-vinegar-hill.html",
+    "section": "New York",
+    "confirmed": true
+   }
+  },
+  "Prospect Heights": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1890-06-01",
+    "headline": "BROOKLYN AND HER PEOPLE",
+    "url": "https://www.nytimes.com/1890/06/01/archives/brooklyn-and-her-people-prospect-heights-popular-among-the.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Prospect Lefferts Gardens": {
+   "category": "coined",
+   "note": "",
+   "first": {
+    "date": "1973-04-29",
+    "headline": "Other Byways on the Tour Circuit",
+    "url": "https://www.nytimes.com/1973/04/29/archives/other-byways-on-the-tour-circuit-m.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "ProCro": {
+   "category": "flop",
+   "note": "The first article covers an assemblyman's bill to penalize brokers who invent neighborhood names.",
+   "first": {
+    "date": "2011-04-19",
+    "headline": "‘SoBro’ and ‘ProCro’ NoJoke to Assemblyman",
+    "url": "https://cityroom.blogs.nytimes.com/2011/04/19/sobro-and-procro-nojoke-to-assemblyman/",
+    "section": "New York",
+    "confirmed": true
+   }
+  },
+  "East Williamsburg": {
+   "category": "coined",
+   "note": "Sixty-two matches before 1950, mostly obituaries, could not be checked, so they are not counted as this neighborhood.",
+   "first": {
+    "date": "1984-03-25",
+    "headline": "NEW INIATIVES SEEK TO LURE INDUSTRIES TO BOOKLYN",
+    "url": "https://www.nytimes.com/1984/03/25/realestate/new-iniatives-seek-to-lure-industries-to-booklyn.html",
+    "section": "Real Estate",
+    "confirmed": true
+   }
+  },
+  "Columbia Street Waterfront District": {
+   "category": "flop",
+   "note": "A 2005 profile describes the Columbia Street neighborhood without the full name in its summary.",
+   "first": {
+    "date": "2010-10-22",
+    "headline": "An Area on the Brooklyn Waterfront, Growing in a Family Way",
+    "url": "https://www.nytimes.com/2010/10/24/realestate/24posting.html",
+    "section": "Real Estate",
+    "confirmed": true
+   }
+  },
+  "Ditmas Park": {
+   "category": "revived",
+   "note": "No early headline or summary shows the full name. The date is the earliest search match.",
+   "first": {
+    "date": "1903-05-03",
+    "headline": "ATTRACTIONS FOR THE HOMESEEKER IN BROOKLYN LONG ISLAND, WESCHESTER AND NEW JERSEY PROPERTIES",
+    "url": "https://www.nytimes.com/1903/05/03/archives/attractions-for-the-homeseeker-in-brooklyn-long-island-weschester.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "South Slope": {
+   "category": "coined",
+   "note": "",
+   "first": {
+    "date": "1988-05-08",
+    "headline": "POSTINGS: Factory Conversion",
+    "url": "https://www.nytimes.com/1988/05/08/realestate/postings-factory-conversion-south-slope-pioneering.html",
+    "section": "Real Estate",
+    "confirmed": true
+   }
+  },
+  "Greenwood Heights": {
+   "category": "coined",
+   "note": "A 1920 headline mentions a Greenwood Heights church, and a 1987 real estate column is titled \"Capitalizing On a Name.\" Neither summary places them.",
+   "first": {
+    "date": "1999-06-13",
+    "headline": "NEIGHBORHOOD REPORT: GREENWOOD HEIGHTS",
+    "url": "https://www.nytimes.com/1999/06/13/nyregion/neighborhood-report-greenwood-heights-testiness-over-school-plan.html",
+    "section": "New York",
+    "confirmed": true
+   }
+  },
+  "Stuyvesant Heights": {
+   "category": "revived",
+   "note": "",
+   "first": {
+    "date": "1911-04-16",
+    "headline": "REALTY CONDITIONS IN BROOKLYN BRIGHT FOR ACTIVE SEASON OF BUILDING AND BUYING.",
+    "url": "https://www.nytimes.com/1911/04/16/archives/realty-conditions-in-brooklyn-bright-for-active-season-of-building.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Hunters Point": {
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1863-09-03",
+    "headline": "Conclusion of the Draft in the First Congres- sional District.",
+    "url": "https://www.nytimes.com/1863/09/03/archives/conclusion-of-the-draft-in-the-first-congres-sional-district.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Dutch Kills": {
+   "category": "revived",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1901-02-11",
+    "headline": "NEWS OF THE RAILROADS",
+    "url": "https://www.nytimes.com/1901/02/11/archives/news-of-the-railroads-foreclosure-suit-begun-long-island-trust.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "SoBro": {
+   "category": "flop",
+   "note": "",
+   "first": {
+    "date": "1994-04-10",
+    "headline": "NEW YORKERS & CO.",
+    "url": "https://www.nytimes.com/1994/04/10/nyregion/new-yorkers-co-the-antiquing-of-the-south-bronx-uh-sobro.html",
+    "section": "New York",
+    "confirmed": true
+   }
+  },
+  "Piano District": {
+   "category": "flop",
+   "note": "A 1990 match about a school piano is excluded. No 2015 summary shows the name, so the date is the earliest match after that.",
+   "first": {
+    "date": "2015-03-25",
+    "headline": "Mott Haven, the Bronx, in Transition",
+    "url": "https://www.nytimes.com/2015/03/29/realestate/mott-haven-the-bronx-in-transition.html",
+    "section": "Real Estate",
+    "confirmed": false
+   }
+  },
+  "Port Morris": {
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1900-03-30",
+    "headline": "MANY BILLS PASSED.",
+    "url": "https://www.nytimes.com/1900/03/30/archives/many-bills-passed.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  }
+ }
+}

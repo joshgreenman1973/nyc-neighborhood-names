@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>When a neighborhood got its name</title>
+<meta name="description" content="Thirty-four New York City neighborhood names and the decade each one arrived in The New York Times.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://joshgreenman1973.github.io/experiments/house-style/house.css">
+<style>
+:root{--ink3:#8a4a6b}
+.cat-coined{--c:var(--ink1)} .cat-flop{--c:var(--ink4)} .cat-revived{--c:var(--ink2c)} .cat-old{--c:var(--ink5)}
+.findings{padding:16px 26px 8px;border-top:1px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:4px 34px}
+.findings p{margin:0 0 14px;font-size:var(--t-body);line-height:1.58;max-width:62ch}
+.findings p b{font-family:var(--display);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:var(--t-micro);letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink2)}
+.legend i{display:inline-block;width:10px;height:10px;background:var(--c);margin-right:6px;vertical-align:-1px;mix-blend-mode:multiply}
+/* ---------- hero map ---------- */
+.stage{display:grid;grid-template-columns:minmax(0,1fr) 320px;border-top:1px solid var(--ink)}
+.mapwrap{position:relative;border-right:1px solid var(--hair);background:#dfe5e6}
+#map{width:100%;height:auto;display:block}
+#map .water{fill:url(#halftone)}
+#map .nj{fill:#e6e8e2;stroke:var(--hair);stroke-width:.6}
+#map .land{fill:var(--paper);stroke:#9aa39c;stroke-width:.9}
+#map .nta{fill:none;stroke:var(--hair);stroke-width:.5;stroke-dasharray:2 2}
+#map .park{fill:var(--ink2c);opacity:.16;mix-blend-mode:multiply}
+#map .boro{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.42em;text-transform:uppercase;fill:var(--ink2);opacity:.42}
+#map .river{font-family:var(--sans);font-style:normal;font-weight:600;font-size:10px;letter-spacing:.3em;text-transform:uppercase;fill:#6d8290;opacity:.8}
+#map .nm{font-family:var(--display);font-weight:700;fill:var(--c);cursor:pointer;letter-spacing:-.01em;mix-blend-mode:multiply;transition:opacity .6s,font-size .6s}
+#map .nm.ghost{font-weight:500}
+#map .halo{font-family:var(--display);font-weight:700;letter-spacing:-.01em;fill:none;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round;opacity:.85;pointer-events:none;transition:opacity .6s,font-size .6s}
+#map .dot{fill:var(--c);transition:opacity .6s,r .6s}
+#map .lead{stroke:var(--c);stroke-width:.8;opacity:.55}
+#map .sel{text-decoration:underline;text-decoration-thickness:2px}
+.bigdec{position:absolute;left:26px;top:20px;font-family:var(--display);font-weight:700;font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.03em;line-height:1;color:var(--ink);opacity:.9;pointer-events:none}
+.bigdec small{display:block;font-family:var(--sans);font-size:var(--t-micro);letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--ink2);margin-top:6px}
+.mapctl{position:absolute;left:0;right:0;bottom:0;padding:12px 26px 12px;background:rgba(236,238,233,.92);border-top:1px solid var(--hair);display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:center}
+.mapctl input{width:100%;accent-color:var(--ink1);margin:0}
+.ticks{grid-column:2;display:flex;justify-content:space-between;font-size:var(--t-micro);letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--ink2)}
+.playb{font-size:var(--t-small);letter-spacing:.12em;text-transform:uppercase;font-weight:700;border:1px solid var(--ink);background:var(--paper);padding:9px 13px;cursor:pointer;color:var(--ink);grid-row:span 2}
+.playb[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.side{background:var(--paper);min-width:0}
+.side .lede{margin:0 0 14px;font-size:.95rem;line-height:1.55;color:#333834}
+.legend.vert{flex-direction:column;gap:8px}
+.card h3{font-family:var(--display);font-weight:700;font-size:1.5rem;letter-spacing:-.02em;margin:0 0 2px;line-height:1.1}
+.card .meta{font-size:var(--t-micro);letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink2);margin-bottom:12px}
+.spark{display:flex;align-items:flex-end;gap:3px;height:64px;margin:6px 0 4px}
+.spark i{flex:1;background:var(--c);mix-blend-mode:multiply;min-height:1px;position:relative}
+.spark i.on{outline:1.5px solid var(--ink);outline-offset:1px}
+.sparkax{display:flex;justify-content:space-between;font-size:8.5px;letter-spacing:.04em;text-transform:uppercase;font-weight:700;color:var(--ink2);margin-bottom:14px}
+.toplist{margin:0;padding:0;list-style:none}
+.toplist li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--hair2);cursor:pointer;font-size:.95rem}
+.toplist li b{font-family:var(--display);font-weight:600;color:var(--c)}
+.toplist li span{font-variant-numeric:tabular-nums;color:var(--ink2)}
+.linkb{background:none;border:0;padding:0;font:inherit;color:var(--ink1);text-decoration:underline;cursor:pointer;font-size:.9rem}
+.chead{border-top:1px solid var(--ink)}
+@media(max-width:980px){.stage{grid-template-columns:1fr}.mapwrap{border-right:0}.side{border-top:1px solid var(--hair)}}
+@media(max-width:600px){.bigdec{left:14px;top:12px}.mapctl{padding:10px 14px;grid-template-columns:1fr}.playb{grid-row:auto}.ticks{grid-column:1;font-size:7.5px;letter-spacing:0}}
+/* arrival chart */
+.arr{width:100%}
+.arow{display:grid;grid-template-columns:minmax(120px,1.3fr) repeat(9,minmax(0,1fr)) 64px;align-items:center;border-bottom:1px solid var(--hair2);cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;padding:0 26px 0 26px;width:100%;text-align:left;font-family:inherit;color:inherit;min-height:34px}
+.arow:hover{background:var(--paper2)}
+.arow.hdr{cursor:default;min-height:28px;border-bottom:1px solid var(--ink)}
+.arow.hdr:hover{background:none}
+.arow.hdr span{font-size:var(--t-micro);letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--ink2);text-align:center}
+.arow.hdr span:first-child{text-align:left}
+.arow .nmc{font-family:var(--display);font-weight:600;font-size:.95rem;line-height:1.15;padding:6px 8px 6px 0}
+.arow .nmc small{display:block;font-family:var(--sans);font-size:var(--t-micro);letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--ink2)}
+.arow .nmc::before{content:"";display:inline-block;width:8px;height:8px;background:var(--c);margin-right:7px;vertical-align:1px}
+.cell{height:26px;margin:0 1px;position:relative;display:flex;align-items:center;justify-content:center;font-size:10px;font-variant-numeric:tabular-nums;font-weight:600}
+.cell i{position:absolute;inset:0;background:var(--c);mix-blend-mode:multiply}
+.cell b{position:relative;font-weight:600}
+.cell.first{outline:1.5px solid var(--ink);outline-offset:-1.5px}
+.cell.pre{background:var(--paper2);color:var(--ink2)}
+.cell.pre b{font-weight:500}
+.arow .fy{text-align:right;font-family:var(--display);font-weight:600;font-size:.92rem;font-variant-numeric:tabular-nums}
+.grp{padding:14px 26px 6px;font-size:var(--t-micro);letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--c);border-bottom:1px solid var(--hair)}
+@media(max-width:700px){
+  .arow{grid-template-columns:minmax(96px,1.2fr) repeat(9,minmax(0,1fr)) 40px;padding:0 12px}
+  .cell b{display:none}
+  .arow.hdr span{font-size:8px;letter-spacing:0}
+  .findings,.grp{padding-left:16px;padding-right:16px}
+}
+.quote{border-left:3px solid var(--c);padding:4px 0 4px 12px;margin:0 0 14px}
+.quote a{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair)}
+.quote div{font-size:var(--t-micro);letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink2);margin-top:4px}
+.cautionbtn{background:none;border:0;padding:0;color:#7a1f2b;font:inherit;font-size:.85rem;text-decoration:underline;cursor:pointer}
+.cautionpop{display:none;background:#1c2a44;color:#fff;padding:12px 14px;max-width:70ch;font-size:.88rem;line-height:1.55;margin-top:8px}
+.cautionpop.show{display:block}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="strip"><span>New York City · names</span><span><a href="methodology.html">Methodology</a></span></div>
+  <header class="head">
+    <div class="hmark" aria-hidden="true">
+      <svg viewBox="0 0 290 150">
+        <g fill="none" stroke-width="1.6">
+          <path stroke="#2d4a86" d="M20 120 C60 60 120 40 170 62 S250 120 280 70"/>
+          <path stroke="#2d4a86" d="M30 132 C70 78 124 60 172 80 S246 132 284 90"/>
+          <path stroke="#2d4a86" d="M42 144 C82 96 130 80 176 98 S244 142 286 110"/>
+          <path stroke="#b07326" d="M8 40 C50 20 90 60 140 34 S230 10 282 30"/>
+          <path stroke="#b07326" d="M12 56 C54 38 96 76 144 52 S232 28 284 48"/>
+          <path stroke="#4a6b52" d="M60 10 C100 50 90 110 150 130"/>
+          <path stroke="#4a6b52" d="M78 6 C118 46 110 104 166 124"/>
+        </g>
+        <g font-family="Archivo" font-weight="700" font-size="13" letter-spacing="2">
+          <text x="180" y="58" fill="#2d4a86">DUMBO</text>
+          <text x="22" y="30" fill="#b07326">SOHA</text>
+          <text x="96" y="92" fill="#4a6b52">SOHO</text>
+        </g>
+      </svg>
+    </div>
+    <h1>When a neighborhood got its name</h1>
+    <p class="sub">Thirty-four New York City neighborhood names and when each one showed up in The New York Times. Some are new names that stuck. Some were pushed and never caught on. A few are old names that faded and came back.</p>
+    <p class="src">Data provided by <a href="https://developer.nytimes.com/docs/articlesearch-product/1/overview">The New York Times</a> Article Search API, 1851 to <span id="asof"></span></p>
+  </header>
+  <div class="capline" id="capline"></div>
+  <div class="counts" id="counts"></div>
+
+  <section class="stage">
+    <div class="mapwrap">
+      <svg id="map" role="img" aria-label="Map of lower and upper Manhattan, northwest Brooklyn, western Queens and the South Bronx. Neighborhood names are sized by how often The New York Times used them in the chosen decade."></svg>
+      <div class="bigdec" id="bigdec"></div>
+      <div class="mapctl">
+        <button class="playb" id="play" aria-pressed="false">Play the decades</button>
+        <input type="range" id="dec" min="0" max="8" step="1" value="8" aria-label="Decade">
+        <div class="ticks"><span>Pre-1950</span><span>50s</span><span>60s</span><span>70s</span><span>80s</span><span>90s</span><span>2000s</span><span>2010s</span><span>2020s</span></div>
+      </div>
+    </div>
+    <aside class="side">
+      <div class="colhead"><span>Reading the map</span></div>
+      <div class="pad">
+        <p class="lede">Each name sits roughly where the neighborhood is and is sized by how many Times articles used it that decade. Faint names had not appeared yet. Press play to watch them arrive, or click any name.</p>
+        <div class="legend vert" id="legend"></div>
+      </div>
+      <div class="colhead"><span id="cardhead">Most used this decade</span></div>
+      <div class="pad" id="card"></div>
+    </aside>
+  </section>
+
+  <section class="findings" id="findings"></section>
+
+  <div class="colhead chead"><span>Articles per decade, name by name</span><span>Outlined box = decade of first use · * earliest match only · 2020s through Sept. 22, 2026</span></div>
+  <div class="arr" id="arr"></div>
+
+  <footer class="foot">
+    <p>Counts are the number of Times articles that match a search for the name in quotation marks plus the name of its borough. They are raw counts: the Times published a different number of articles each decade, and not every match uses the name for the neighborhood. Gray cells come before the name's first use and are other meanings, like London's Soho; the map ignores them. The first use is the oldest article whose headline or summary shows the name used for the place, read by hand. It is the first appearance in the Times, which can be later than the first use anywhere. Full details are in the <a href="methodology.html">methodology</a>.</p>
+    <p><button class="cautionbtn" id="cbtn">And please read this AI caution.</button></p>
+    <div class="cautionpop" id="cpop">Everything substantive (the idea, the choice of names, the sources and how to read them) was decided by the author, a human. The coding and the file work were done mostly by Anthropic's Claude and Claude Code. The author questioned Claude closely throughout and insisted on quality checks. For this project those were: every first use was chosen by reading the headlines and summaries of the oldest matching articles one by one and rejecting the ones that used the words some other way; two names were dropped when their searches could not be separated from ordinary words; every count is the API's own hit total for a query published in the methodology; and the map and chart were checked for overlapping labels at desktop and phone widths. The risks of using AI remain, and we would be grateful to hear of any errors you spot.</div>
+    <p>Josh Greenman · <a href="https://joshgreenman1973.github.io/experiments/">More experiments</a></p>
+  </footer>
+</div>
+
+<div class="drawer" id="drawer"><div class="scrim" data-x></div><div class="panel">
+  <div class="dhead"><div><div class="lbl" id="dlbl"></div><h2 id="dtitle"></h2></div><button class="xbtn" data-x aria-label="Close">×</button></div>
+  <div class="dbody" id="dbody"></div>
+</div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+const DECS=['pre-1950','1950s','1960s','1970s','1980s','1990s','2000s','2010s','2020s'];
+const DLBL=['<1950','1950s','1960s','1970s','1980s','1990s','2000s','2010s','2020s*'];
+const CATS={coined:'Took off after 1950',revived:'Faded, then came back',old:'In steady use since before 1950',flop:'Never caught on'};
+const fmt=d3.format(',');
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function fdate(d){return new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
+
+const J=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u+' '+r.status);return r.json();});
+Promise.all(['data/names.json','data/boro_clip.geojson','data/nta.geojson','data/parks.geojson','data/nj.geojson'].map(J)).then(([D,G,NTA,PK,NJ])=>{
+  const N=D.names;
+  document.getElementById('asof').textContent=fdate(D.asof);
+  document.getElementById('capline').innerHTML=`<b>${N.length} names</b> · Times articles from 1851 through ${fdate(D.asof)}`;
+  const byCat=c=>N.filter(n=>n.category===c).length;
+  document.getElementById('counts').innerHTML=[
+    [fmt(d3.sum(N,n=>n.total)),'Articles matched'],
+    [byCat('coined'),'Took off after 1950'],
+    [byCat('revived')+byCat('old'),'In the Times before 1950'],
+    [byCat('flop'),'Never caught on']].map(([b,s])=>`<div><b>${b}</b><span>${s}</span></div>`).join('');
+  document.getElementById('findings').innerHTML=D.findings.map(f=>`<p>${f}</p>`).join('');
+  document.getElementById('legend').innerHTML=Object.entries(CATS).filter(([k])=>N.some(n=>n.category===k)).map(([k,v])=>`<span class="cat-${k}"><i></i>${v} (${byCat(k)})</span>`).join('');
+
+  /* ---------- arrival chart ---------- */
+  const maxH=d3.max(N,n=>d3.max(DECS,(d,i)=>cnt(n,i)));
+  const op=d3.scaleLog().domain([1,maxH]).range([.12,.95]).clamp(true);
+  let h=`<div class="arow hdr"><span>Name</span>${DLBL.map(d=>`<span>${d}</span>`).join('')}<span style="text-align:right">First</span></div>`;
+  for(const c of ['coined','revived','old','flop']){
+    const rows=N.filter(n=>n.category===c).sort((a,b)=>(a.first?.date||'9')<(b.first?.date||'9')?-1:1);
+    if(!rows.length)continue;
+    h+=`<div class="grp cat-${c}">${CATS[c]}</div>`;
+    for(const n of rows){
+      const fd=n.first?DECS[decIdx(n.first.date)]:null;
+      h+=`<button class="arow cat-${c}" data-n="${esc(n.name)}"><span class="nmc">${esc(n.name)}<small>${esc(n.borough)}</small></span>`+
+        DECS.map((d,i)=>{const v=n.decades[d];const pre=n.first&&i<decIdx(n.first.date);return `<span class="cell${d===fd?' first':''}${pre?' pre':''}" title="${esc(n.name)}, ${d}: ${fmt(v)} articles${pre?' (before the first use; other meanings)':''}">${v&&!pre?`<i style="opacity:${op(v)}"></i>`:''}<b>${v?short(v):''}</b></span>`}).join('')+
+        `<span class="fy">${n.first?n.first.date.slice(0,4)+(n.first.confirmed?'':'*'):'—'}</span></button>`;
+    }
+  }
+  document.getElementById('arr').innerHTML=h;
+  function cnt(n,di){return n.first&&di<decIdx(n.first.date)?0:n.decades[DECS[di]];}
+  function short(v){return v>=1000?(v/1000).toFixed(v>=10000?0:1)+'k':v;}
+  function decIdx(date){const y=+date.slice(0,4);return y<1950?0:Math.min(8,Math.floor((y-1950)/10)+1);}
+  document.querySelectorAll('.arow[data-n]').forEach(b=>b.onclick=()=>open(b.dataset.n));
+
+  /* ---------- map ---------- */
+  // d3 wants clockwise outer rings; flip any feature whose spherical area covers most of the globe
+  const rewind=fc=>{fc.features.forEach(f=>{if(d3.geoArea(f)>2*Math.PI){const g=f.geometry;const rv=p=>p.map(r=>r.slice().reverse());
+    g.coordinates=g.type==='Polygon'?rv(g.coordinates):g.coordinates.map(rv);}});return fc;};
+  [G,NTA,PK,NJ].forEach(rewind);
+  const svg=d3.select('#map');
+  const NARROW=document.querySelector('.mapwrap').clientWidth<700;
+  const W=NARROW?520:900,H=NARROW?860:1060; svg.attr('viewBox',`0 0 ${W} ${H}`);
+  const defs=svg.append('defs');
+  const pat=defs.append('pattern').attr('id','halftone').attr('width',6).attr('height',6).attr('patternUnits','userSpaceOnUse').attr('patternTransform','rotate(30)');
+  pat.append('rect').attr('width',6).attr('height',6).attr('fill','#dde4e6');
+  pat.append('circle').attr('cx',3).attr('cy',3).attr('r',1.05).attr('fill','#2d4a86').attr('opacity',.2);
+  const ext={type:'MultiPoint',coordinates:[[-74.03,40.632],[-73.895,40.822]]};
+  const proj=d3.geoMercator().fitExtent([[10,NARROW?60:20],[W-10,H-(NARROW?104:70)]],ext);
+  const path=d3.geoPath(proj);
+  svg.append('rect').attr('class','water').attr('width',W).attr('height',H);
+  svg.append('g').selectAll('path').data(NJ.features).join('path').attr('class','nj').attr('d',path);
+  svg.append('g').selectAll('path').data(G.features).join('path').attr('class','land').attr('d',path);
+  svg.append('g').selectAll('path').data(PK.features).join('path').attr('class','park').attr('d',path);
+  svg.append('g').selectAll('path').data(NTA.features).join('path').attr('class','nta').attr('d',path);
+  const BL={Manhattan:[-73.9735,40.7835],Brooklyn:[-73.952,40.648],Queens:[-73.905,40.733],'The Bronx':[-73.908,40.822],'New Jersey':[-74.05,40.752]};
+  svg.append('g').selectAll('text').data(Object.entries(BL)).join('text').attr('class','boro')
+    .attr('x',d=>proj(d[1])[0]).attr('y',d=>proj(d[1])[1]).attr('text-anchor','middle').text(d=>d[0]);
+  const RV=[['Hudson River',[-74.004,40.792],-62],['East River',[-73.9635,40.748],-62],['Upper Bay',[-74.03,40.672],0],['Newtown Creek',[-73.935,40.7305],-12],['Harlem River',[-73.9345,40.8085],-58]];
+  svg.append('g').selectAll('text').data(RV).join('text').attr('class','river')
+    .attr('transform',d=>{const [x,y]=proj(d[1]);return `translate(${x},${y}) rotate(${d[2]})`;}).attr('text-anchor','middle').text(d=>d[0]);
+
+  const sz=d3.scaleSqrt().domain([0,maxH]).range(NARROW?[9.5,26]:[10,40]);
+  const items=N.map(n=>{const [x,y]=proj([n.lon,n.lat]);return {n,x,y};});
+  const gL=svg.append('g'), gD=svg.append('g'), gH=svg.append('g'), gT=svg.append('g');
+  const leads=gL.selectAll('line').data(items).join('line').attr('class',d=>'lead cat-'+d.n.category);
+  const dots=gD.selectAll('circle').data(items).join('circle').attr('class',d=>'dot cat-'+d.n.category).attr('cx',d=>d.x).attr('cy',d=>d.y);
+  const halos=gH.selectAll('text').data(items).join('text').attr('class','halo').text(d=>d.n.name);
+  const labels=gT.selectAll('text').data(items).join('text').attr('class',d=>'nm cat-'+d.n.category).text(d=>d.n.name)
+    .on('click',(e,d)=>{select(d.n.name);});
+  labels.append('title').text(d=>d.n.name+' — click for details');
+  const ctx=document.createElement('canvas').getContext('2d');
+  let cur=8, selName=null;
+  function place(di){
+    cur=di; const dec=DECS[di]; const placed=[];
+    // names already in use by this decade (any article in this or an earlier decade after first real use)
+    const order=[...items].sort((a,b)=>cnt(b.n,di)-cnt(a.n,di));
+    for(const it of order){
+      const v=cnt(it.n,di), fs=v?sz(v):(NARROW?8.5:10);
+      if(NARROW&&!v){Object.assign(it,{lx:it.x,ly:it.y,an:'middle',fs,on:false,far:false});continue;}
+      ctx.font=`700 ${fs}px Archivo`; const w=ctx.measureText(it.n.name).width, hh=fs*.74;
+      // candidate label centers: just above/below the dot, then rings of growing radius
+      const C=[[0,-(hh/2+5)],[0,hh/2+7],[w/2+7,0],[-(w/2+7),0]];
+      for(const r of [16,26,38,52,68,86]) for(let k=0;k<16;k++){const t=k*Math.PI/8;C.push([Math.cos(t)*(r+w/2*Math.abs(Math.cos(t))),Math.sin(t)*(r+hh/2)]);}
+      let best=null;
+      for(const [dx,dy] of C){
+        const cx=it.x+dx, cy=it.y+dy, box=[cx-w/2-3,cy-hh/2-2,cx+w/2+3,cy+hh/2+2];
+        const out=box[0]<4||box[2]>W-4||box[1]<(NARROW?64:86)||box[3]>H-(NARROW?96:78);
+        const hitDot=items.some(o=>o!==it&&o.x>box[0]&&o.x<box[2]&&o.y>box[1]&&o.y<box[3]);
+        const hit=placed.some(p=>!(box[2]<p[0]||box[0]>p[2]||box[3]<p[1]||box[1]>p[3]));
+        if(!hit&&!out&&!hitDot){best={dx,dy,box};break;}
+      }
+      if(!best){const dx=0,dy=-(hh/2+5);best={dx,dy,box:[it.x-w/2,it.y+dy-hh/2,it.x+w/2,it.y+dy+hh/2]};}
+      placed.push(best.box);
+      Object.assign(it,{lx:it.x+best.dx,ly:it.y+best.dy+hh*.5-fs*.06,cy:it.y+best.dy,an:'middle',fs,on:v>0,far:Math.hypot(best.dx,best.dy)>hh+w/2+10});
+    }
+    const t=d3.transition().duration(650);
+    for(const sel of [labels,halos]) sel.transition(t).attr('x',d=>d.lx).attr('y',d=>d.ly).style('font-size',d=>d.fs+'px').style('opacity',d=>d.on?1:.16);
+    labels.attr('text-anchor',d=>d.an).classed('ghost',d=>!d.on); halos.attr('text-anchor',d=>d.an);
+    halos.style('display',d=>d.on?null:'none'); if(NARROW){labels.style('display',d=>d.on?null:'none');}
+    dots.transition(t).attr('r',d=>d.on?3:1.6).style('opacity',d=>d.on?1:.3);
+    leads.attr('x1',d=>d.x).attr('y1',d=>d.y).attr('x2',d=>d.lx).attr('y2',d=>d.cy).style('display',d=>d.far&&d.on?null:'none');
+    const inUse=items.filter(d=>d.on).length;
+    document.getElementById('bigdec').innerHTML=`${DLBL[di]==='<1950'?'Before 1950':DLBL[di]}<small>${inUse} of ${N.length} names in the Times</small>`;
+    if(!selName) sidebar(); else card(selName);
+  }
+  function sidebar(){
+    const dec=DECS[cur];
+    const top=[...N].filter(n=>cnt(n,cur)>0).sort((a,b)=>cnt(b,cur)-cnt(a,cur)).slice(0,10);
+    document.getElementById('cardhead').textContent=`Most used, ${DLBL[cur]==='<1950'?'before 1950':'the '+DLBL[cur]}`;
+    document.getElementById('card').innerHTML=top.length?`<ul class="toplist">${top.map(n=>`<li class="cat-${n.category}" data-n="${esc(n.name)}"><b>${esc(n.name)}</b><span>${fmt(cnt(n,cur))}</span></li>`).join('')}</ul>`:'<p class="lede">None of these names appeared in the Times this decade.</p>';
+    document.querySelectorAll('.toplist li').forEach(li=>li.onclick=()=>select(li.dataset.n));
+  }
+  function card(name){
+    const n=N.find(x=>x.name===name); const mx=d3.max(DECS,(d,i)=>cnt(n,i))||1;
+    document.getElementById('cardhead').textContent='Selected name';
+    document.getElementById('card').innerHTML=`<div class="card cat-${n.category}"><h3>${esc(n.name)}</h3><div class="meta" style="color:var(--c)">${CATS[n.category]} · ${esc(n.borough)}</div>`+
+      (n.first?`<div class="quote cat-${n.category}"><a href="${esc(n.first.url)}" target="_blank" rel="noopener">${esc(n.first.headline||'(untitled)')}</a><div>${n.first.confirmed?'First use':'Earliest match'} · ${fdate(n.first.date)}</div></div>`:'')+
+      `<div class="spark">${DECS.map((d,i)=>`<i class="${i===cur?'on':''}" style="height:${Math.max(1,64*Math.sqrt(cnt(n,i)/mx))}px" title="${DLBL[i]}: ${fmt(cnt(n,i))}"></i>`).join('')}</div><div class="sparkax"><span>Pre-1950</span><span>2020s</span></div>`+
+      `<p class="lede">${fmt(cnt(n,cur))} articles ${DLBL[cur]==='<1950'?'before 1950':'in the '+DLBL[cur]}; ${fmt(n.total)} in all.</p>`+
+      `<button class="linkb" id="more">Full details</button> · <button class="linkb" id="back">Back to the top ten</button></div>`;
+    document.getElementById('more').onclick=()=>open(n.name);
+    document.getElementById('back').onclick=()=>{selName=null;labels.classed('sel',false);sidebar();};
+  }
+  function select(name){selName=name;labels.classed('sel',d=>d.n.name===name);card(name);
+    if(innerWidth<980)document.getElementById('card').scrollIntoView({behavior:'smooth',block:'nearest'});}
+  const sl=document.getElementById('dec'); sl.oninput=()=>place(+sl.value);
+  let timer=null; const pb=document.getElementById('play');
+  const stopP=()=>{clearInterval(timer);timer=null;pb.setAttribute('aria-pressed','false');pb.textContent='Play the decades';};
+  pb.onclick=()=>{if(timer){stopP();return;}
+    pb.setAttribute('aria-pressed','true');pb.textContent='Stop';sl.value=0;place(0);
+    timer=setInterval(()=>{if(+sl.value>=8){stopP();return;}sl.value=+sl.value+1;place(+sl.value);},1600);};
+  document.fonts.ready.then(()=>place(8));
+
+  /* ---------- drawer ---------- */
+  const dr=document.getElementById('drawer');
+  function open(name){
+    const n=N.find(x=>x.name===name); if(!n)return;
+    document.getElementById('dlbl').innerHTML=`<span class="cat-${n.category}" style="color:var(--c)">${CATS[n.category]}</span> · ${esc(n.borough)}`;
+    document.getElementById('dtitle').textContent=n.name;
+    let b='';
+    if(n.first){b+=`<div class="narr"><h4>${n.first.confirmed?'First headline or summary to use the name':'Earliest search match'}</h4></div><div class="quote cat-${n.category}"><a href="${esc(n.first.url)}" target="_blank" rel="noopener">${esc(n.first.headline||'(untitled)')}</a><div>${fdate(n.first.date)}${n.first.section?' · '+esc(n.first.section):''}</div></div>`;}
+    if(n.note)b+=`<div class="narr"><p>${n.note}</p></div>`;
+    b+=`<div class="narr"><h4>Articles per decade</h4></div><table class="h"><tr><th>Decade</th><th class="n">Articles</th></tr>`+DECS.map((d,i)=>`<tr><td>${DLBL[i]}</td><td class="n">${fmt(n.decades[d])}</td></tr>`).join('')+`<tr><td><b>Total</b></td><td class="n"><b>${fmt(n.total)}</b></td></tr></table>`;
+    b+=`<div class="narr"><h4>Query</h4><p><code>${esc(n.query)}</code></p></div>`;
+    document.getElementById('dbody').innerHTML=b; dr.classList.add('open');
+  }
+  dr.querySelectorAll('[data-x]').forEach(x=>x.onclick=()=>dr.classList.remove('open'));
+  addEventListener('keydown',e=>{if(e.key==='Escape')dr.classList.remove('open');});
+});
+document.getElementById('cbtn').onclick=()=>document.getElementById('cpop').classList.toggle('show');
+</script>
+</body>
+</html>
