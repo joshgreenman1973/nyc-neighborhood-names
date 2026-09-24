@@ -16,7 +16,8 @@ for r in raw:
     out.append({'name': r['name'], 'borough': r['borough'], 'lat': lat, 'lon': lon,
         'query': r['query'], 'decades': {d: r['decades'][d] for d in DECS},
         'total': sum(r['decades'].values()), 'first': first,
-        'category': rv['category'], 'note': rv.get('note', '')})
+        'category': rv['category'], 'note': rv.get('note', ''),
+        'capped': [d for d in DECS if r['decades'][d] >= 10000]})
 json.dump({'asof': '2026-09-22', 'names': out, 'findings': review['findings'], 'dropped': review['drop']},
           open(os.path.join(ROOT, 'data', 'names.json'), 'w'), indent=1, ensure_ascii=False)
 print('wrote', len(out), 'names')

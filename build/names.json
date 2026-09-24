@@ -146,5 +146,17 @@
  {
   "name": "Park Slope",
   "borough": "Brooklyn"
+ },
+ {
+  "name": "Williamsburg",
+  "borough": "Brooklyn"
+ },
+ {
+  "name": "Harlem",
+  "borough": "Manhattan"
+ },
+ {
+  "name": "Bushwick",
+  "borough": "Brooklyn"
  }
 ]

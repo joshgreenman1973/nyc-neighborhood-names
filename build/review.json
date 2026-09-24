@@ -396,6 +396,39 @@
     "section": "Archives",
     "confirmed": true
    }
+  },
+  "Williamsburg": {
+   "category": "old",
+   "note": "In 1851 Williamsburg was its own city. An 1853 headline covers plans to consolidate Brooklyn, Williamsburg and Bushwick. Counts also pick up articles about East Williamsburg and the Williamsburg Bridge.",
+   "first": {
+    "date": "1851-12-03",
+    "headline": "BROOKLYN.",
+    "url": "https://www.nytimes.com/1851/12/03/archives/brooklyn-long-island-railroad-company-williamsburg-jubilee-st.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Harlem": {
+   "category": "old",
+   "note": "The 1860 headline is a baseball game against the Harlem club \"of Harlem.\" The Times archive starts in 1851, and the pre-1950 count hit the API ceiling of 10,000, so the true figure is higher.",
+   "first": {
+    "date": "1860-08-23",
+    "headline": "Base Ball.",
+    "url": "https://www.nytimes.com/1860/08/23/archives/base-ball-charter-qak-of-brooklyn-vs-harlem-of-harlem.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Bushwick": {
+   "category": "old",
+   "note": "In 1853 Bushwick was a separate town; the headline covers plans to consolidate it with Brooklyn and Williamsburg.",
+   "first": {
+    "date": "1853-10-06",
+    "headline": "CONSOLIDATION.",
+    "url": "https://www.nytimes.com/1853/10/06/archives/consolidation-brooklyn-williamsburg-and-bushwickimportant-meetig-of.html",
+    "section": "Archives",
+    "confirmed": true
+   }
   }
  }
 }

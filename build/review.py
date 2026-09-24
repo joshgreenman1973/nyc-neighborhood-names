@@ -52,8 +52,11 @@ FIRST = {  # name: (date, headline fragment, source list or None for raw oldest,
  'Piano District': ('2015-03-25', 'Mott Haven, the Bronx', None, False),
  'Port Morris': ('1900-03-30', 'MANY BILLS PASSED', None, False),
  'Park Slope': ('1897-11-26', 'BIG BILL FOR BROOKLYN', None, True),
+ 'Williamsburg': ('1851-12-03', 'WILLIAMSBURG JUBILEE', None, True),
+ 'Harlem': ('1860-08-23', 'HARLEM OF HARLEM', None, True),
+ 'Bushwick': ('1853-10-06', 'CONSOLIDATION', None, True),
 }
-PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Park Slope', 'Manhattan Valley', 'Stuyvesant Heights',
+PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Park Slope', 'Williamsburg', 'Harlem', 'Bushwick', 'Manhattan Valley', 'Stuyvesant Heights',
                     'Hunters Point', 'Port Morris', 'Dutch Kills', 'Ditmas Park'}
 NOTES = {
  'SoHo': "All 36 matches before 1970 are London's Soho or other uses, judging by their headlines and summaries.",
@@ -76,6 +79,9 @@ NOTES = {
  'Ditmas Park': 'No early headline or summary shows the full name. The date is the earliest search match.',
  'Greenwood Heights': 'A 1920 headline mentions a Greenwood Heights church, and a 1987 real estate column is titled "Capitalizing On a Name." Neither summary places them.',
  'Park Slope': 'The 1897 headline calls it "the Park Slope," with the article.',
+ 'Williamsburg': 'In 1851 Williamsburg was its own city. An 1853 headline covers plans to consolidate Brooklyn, Williamsburg and Bushwick. Counts also pick up articles about East Williamsburg and the Williamsburg Bridge.',
+ 'Harlem': 'The 1860 headline is a baseball game against the Harlem club "of Harlem." The Times archive starts in 1851, and the pre-1950 count hit the API ceiling of 10,000, so the true figure is higher.',
+ 'Bushwick': 'In 1853 Bushwick was a separate town; the headline covers plans to consolidate it with Brooklyn and Williamsburg.',
  'Hunters Point': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Dutch Kills': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Port Morris': 'No early headline or summary shows the name. The date is the earliest search match.',

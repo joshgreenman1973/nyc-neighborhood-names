@@ -27,7 +27,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "All 36 matches before 1970 are London's Soho or other uses, judging by their headlines and summaries."
+   "note": "All 36 matches before 1970 are London's Soho or other uses, judging by their headlines and summaries.",
+   "capped": []
   },
   {
    "name": "Tribeca",
@@ -55,7 +56,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "An October 1975 article on SoHo already matches the search, but its summary doesn't show the name."
+   "note": "An October 1975 article on SoHo already matches the search, but its summary doesn't show the name.",
+   "capped": []
   },
   {
    "name": "NoHo",
@@ -83,7 +85,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "Arts listings from May 1975 match the search, but their summaries do not show the name."
+   "note": "Arts listings from May 1975 match the search, but their summaries do not show the name.",
+   "capped": []
   },
   {
    "name": "Nolita",
@@ -111,7 +114,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "The 1996 summary spells it NoLiTa, for North of Little Italy. A 1977 match is a death notice, not the place."
+   "note": "The 1996 summary spells it NoLiTa, for North of Little Italy. A 1977 match is a death notice, not the place.",
+   "capped": []
   },
   {
    "name": "Alphabet City",
@@ -139,7 +143,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "A 1984 review of the film \"Alphabet City\" comes first. A 1941 match is about something else."
+   "note": "A 1984 review of the film \"Alphabet City\" comes first. A 1941 match is about something else.",
+   "capped": []
   },
   {
    "name": "Loisaida",
@@ -167,7 +172,8 @@
     "confirmed": true
    },
    "category": "flop",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "East Village",
@@ -195,7 +201,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "The 1963 headline lists \"the East Village\" among six affordable Manhattan sections. A few earlier matches could not be checked."
+   "note": "The 1963 headline lists \"the East Village\" among six affordable Manhattan sections. A few earlier matches could not be checked.",
+   "capped": []
   },
   {
    "name": "Hudson Square",
@@ -223,7 +230,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "Twelve matches before 1950 could not be checked, so they are not counted as this neighborhood."
+   "note": "Twelve matches before 1950 could not be checked, so they are not counted as this neighborhood.",
+   "capped": []
   },
   {
    "name": "Meatpacking District",
@@ -251,7 +259,8 @@
     "confirmed": false
    },
    "category": "coined",
-   "note": "No early headline or summary shows the name. The date is the earliest search match."
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
   },
   {
    "name": "Flatiron District",
@@ -279,7 +288,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Hudson Yards",
@@ -307,7 +317,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "The first matches, from 2001 and 2002, concern the Olympic bid for the same West Side rail yards."
+   "note": "The first matches, from 2001 and 2002, concern the Olympic bid for the same West Side rail yards.",
+   "capped": []
   },
   {
    "name": "SoHa",
@@ -335,7 +346,8 @@
     "confirmed": true
    },
    "category": "flop",
-   "note": "The Times placed SoHa in three different stretches: 104th to 107th Streets (1996), south of Columbia (1999) and 96th to 113th Streets (2002)."
+   "note": "The Times placed SoHa in three different stretches: 104th to 107th Streets (1996), south of Columbia (1999) and 96th to 113th Streets (2002).",
+   "capped": []
   },
   {
    "name": "Manhattan Valley",
@@ -363,7 +375,8 @@
     "confirmed": true
    },
    "category": "revived",
-   "note": "The 1890s headlines concern a Riverside Drive viaduct over a valley near 125th Street, not the blocks that carry the name today."
+   "note": "The 1890s headlines concern a Riverside Drive viaduct over a valley near 125th Street, not the blocks that carry the name today.",
+   "capped": []
   },
   {
    "name": "Hell's Kitchen",
@@ -391,7 +404,8 @@
     "confirmed": true
    },
    "category": "revived",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Dumbo",
@@ -419,7 +433,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "Earlier matches are mostly the Disney elephant. The 1997 summary calls the waterfront between the bridges \"dubbed Dumbo.\""
+   "note": "Earlier matches are mostly the Disney elephant. The 1997 summary calls the waterfront between the bridges \"dubbed Dumbo.\"",
+   "capped": []
   },
   {
    "name": "Boerum Hill",
@@ -447,7 +462,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Cobble Hill",
@@ -475,7 +491,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "Matches before 1950 are mostly a Cobble Hill in the Adirondacks, so they are not counted."
+   "note": "Matches before 1950 are mostly a Cobble Hill in the Adirondacks, so they are not counted.",
+   "capped": []
   },
   {
    "name": "Carroll Gardens",
@@ -503,7 +520,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "BoCoCa",
@@ -531,7 +549,8 @@
     "confirmed": true
    },
    "category": "flop",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Vinegar Hill",
@@ -559,7 +578,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "Earlier matches from 1970 on exist, but their summaries do not show the name."
+   "note": "Earlier matches from 1970 on exist, but their summaries do not show the name.",
+   "capped": []
   },
   {
    "name": "Prospect Heights",
@@ -587,7 +607,8 @@
     "confirmed": true
    },
    "category": "old",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Prospect Lefferts Gardens",
@@ -615,7 +636,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "ProCro",
@@ -643,7 +665,8 @@
     "confirmed": true
    },
    "category": "flop",
-   "note": "The first article covers an assemblyman's bill to penalize brokers who invent neighborhood names."
+   "note": "The first article covers an assemblyman's bill to penalize brokers who invent neighborhood names.",
+   "capped": []
   },
   {
    "name": "East Williamsburg",
@@ -671,7 +694,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "Sixty-two matches before 1950, mostly obituaries, could not be checked, so they are not counted as this neighborhood."
+   "note": "Sixty-two matches before 1950, mostly obituaries, could not be checked, so they are not counted as this neighborhood.",
+   "capped": []
   },
   {
    "name": "Columbia Street Waterfront District",
@@ -699,7 +723,8 @@
     "confirmed": true
    },
    "category": "flop",
-   "note": "A 2005 profile describes the Columbia Street neighborhood without the full name in its summary."
+   "note": "A 2005 profile describes the Columbia Street neighborhood without the full name in its summary.",
+   "capped": []
   },
   {
    "name": "Ditmas Park",
@@ -727,7 +752,8 @@
     "confirmed": false
    },
    "category": "revived",
-   "note": "No early headline or summary shows the full name. The date is the earliest search match."
+   "note": "No early headline or summary shows the full name. The date is the earliest search match.",
+   "capped": []
   },
   {
    "name": "South Slope",
@@ -755,7 +781,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Greenwood Heights",
@@ -783,7 +810,8 @@
     "confirmed": true
    },
    "category": "coined",
-   "note": "A 1920 headline mentions a Greenwood Heights church, and a 1987 real estate column is titled \"Capitalizing On a Name.\" Neither summary places them."
+   "note": "A 1920 headline mentions a Greenwood Heights church, and a 1987 real estate column is titled \"Capitalizing On a Name.\" Neither summary places them.",
+   "capped": []
   },
   {
    "name": "Stuyvesant Heights",
@@ -811,7 +839,8 @@
     "confirmed": true
    },
    "category": "revived",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Hunters Point",
@@ -839,7 +868,8 @@
     "confirmed": false
    },
    "category": "old",
-   "note": "No early headline or summary shows the name. The date is the earliest search match."
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
   },
   {
    "name": "Dutch Kills",
@@ -867,7 +897,8 @@
     "confirmed": false
    },
    "category": "revived",
-   "note": "No early headline or summary shows the name. The date is the earliest search match."
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
   },
   {
    "name": "SoBro",
@@ -895,7 +926,8 @@
     "confirmed": true
    },
    "category": "flop",
-   "note": ""
+   "note": "",
+   "capped": []
   },
   {
    "name": "Piano District",
@@ -923,7 +955,8 @@
     "confirmed": false
    },
    "category": "flop",
-   "note": "A 1990 match about a school piano is excluded. No 2015 summary shows the name, so the date is the earliest match after that."
+   "note": "A 1990 match about a school piano is excluded. No 2015 summary shows the name, so the date is the earliest match after that.",
+   "capped": []
   },
   {
    "name": "Port Morris",
@@ -951,7 +984,8 @@
     "confirmed": false
    },
    "category": "old",
-   "note": "No early headline or summary shows the name. The date is the earliest search match."
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "capped": []
   },
   {
    "name": "Park Slope",
@@ -979,7 +1013,97 @@
     "confirmed": true
    },
    "category": "old",
-   "note": "The 1897 headline calls it \"the Park Slope,\" with the article."
+   "note": "The 1897 headline calls it \"the Park Slope,\" with the article.",
+   "capped": []
+  },
+  {
+   "name": "Williamsburg",
+   "borough": "Brooklyn",
+   "lat": 40.712,
+   "lon": -73.957,
+   "query": "\"Williamsburg\" Brooklyn",
+   "decades": {
+    "pre-1950": 7456,
+    "1950s": 670,
+    "1960s": 715,
+    "1970s": 1092,
+    "1980s": 879,
+    "1990s": 1496,
+    "2000s": 5047,
+    "2010s": 5835,
+    "2020s": 1742
+   },
+   "total": 24932,
+   "first": {
+    "date": "1851-12-03",
+    "headline": "BROOKLYN.",
+    "url": "https://www.nytimes.com/1851/12/03/archives/brooklyn-long-island-railroad-company-williamsburg-jubilee-st.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "In 1851 Williamsburg was its own city. An 1853 headline covers plans to consolidate Brooklyn, Williamsburg and Bushwick. Counts also pick up articles about East Williamsburg and the Williamsburg Bridge.",
+   "capped": []
+  },
+  {
+   "name": "Harlem",
+   "borough": "Manhattan",
+   "lat": 40.809,
+   "lon": -73.946,
+   "query": "\"Harlem\" Manhattan",
+   "decades": {
+    "pre-1950": 10000,
+    "1950s": 1293,
+    "1960s": 2410,
+    "1970s": 3346,
+    "1980s": 2991,
+    "1990s": 4810,
+    "2000s": 7271,
+    "2010s": 5172,
+    "2020s": 2412
+   },
+   "total": 39705,
+   "first": {
+    "date": "1860-08-23",
+    "headline": "Base Ball.",
+    "url": "https://www.nytimes.com/1860/08/23/archives/base-ball-charter-qak-of-brooklyn-vs-harlem-of-harlem.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "The 1860 headline is a baseball game against the Harlem club \"of Harlem.\" The Times archive starts in 1851, and the pre-1950 count hit the API ceiling of 10,000, so the true figure is higher.",
+   "capped": [
+    "pre-1950"
+   ]
+  },
+  {
+   "name": "Bushwick",
+   "borough": "Brooklyn",
+   "lat": 40.695,
+   "lon": -73.918,
+   "query": "\"Bushwick\" Brooklyn",
+   "decades": {
+    "pre-1950": 4663,
+    "1950s": 400,
+    "1960s": 417,
+    "1970s": 695,
+    "1980s": 499,
+    "1990s": 803,
+    "2000s": 1259,
+    "2010s": 2078,
+    "2020s": 823
+   },
+   "total": 11637,
+   "first": {
+    "date": "1853-10-06",
+    "headline": "CONSOLIDATION.",
+    "url": "https://www.nytimes.com/1853/10/06/archives/consolidation-brooklyn-williamsburg-and-bushwickimportant-meetig-of.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "In 1853 Bushwick was a separate town; the headline covers plans to consolidate it with Brooklyn and Williamsburg.",
+   "capped": []
   }
  ],
  "findings": [
