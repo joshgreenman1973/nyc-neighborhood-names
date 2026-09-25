@@ -1516,6 +1516,35 @@
    "capped": []
   },
   {
+   "name": "Sunset Park",
+   "borough": "Brooklyn",
+   "lat": 40.6455,
+   "lon": -74.0124,
+   "query": "\"Sunset Park\" Brooklyn",
+   "decades": {
+    "pre-1950": 148,
+    "1950s": 15,
+    "1960s": 29,
+    "1970s": 166,
+    "1980s": 243,
+    "1990s": 682,
+    "2000s": 948,
+    "2010s": 835,
+    "2020s": 446
+   },
+   "total": 3512,
+   "first": {
+    "date": "1957-03-11",
+    "headline": "CHURCH REDEDICATED",
+    "url": "https://www.nytimes.com/1957/03/11/archives/church-rededicated-renovated-sunset-park-edifice-again-in-use-in.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "coined",
+   "note": "Earlier matches include the park itself and other Sunset Parks, such as a Catskills inn. They are not counted. The 1957 headline describes a renovated Sunset Park church in Brooklyn.",
+   "capped": []
+  },
+  {
    "name": "Bay Ridge",
    "borough": "Brooklyn",
    "lat": 40.6264,
@@ -1834,6 +1863,445 @@
    },
    "category": "old",
    "note": "",
+   "capped": []
+  },
+  {
+   "name": "Forest Hills",
+   "borough": "Queens",
+   "lat": 40.7196,
+   "lon": -73.8448,
+   "query": "\"Forest Hills\" Queens",
+   "decades": {
+    "pre-1950": 4023,
+    "1950s": 2966,
+    "1960s": 3020,
+    "1970s": 4225,
+    "1980s": 1581,
+    "1990s": 2647,
+    "2000s": 2391,
+    "2010s": 840,
+    "2020s": 318
+   },
+   "total": 22011,
+   "first": {
+    "date": "1910-08-14",
+    "headline": "MORE SAGE HOTELS.",
+    "url": "https://www.nytimes.com/1910/08/14/archives/more-sage-hotels-three-going-up-at-forest-hills-li-by-order-of-the.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "Counts from the 1910s to the 1970s likely include many tennis stories; the national championships were played at Forest Hills for decades.",
+   "capped": []
+  },
+  {
+   "name": "Sunnyside",
+   "borough": "Queens",
+   "lat": 40.7433,
+   "lon": -73.9196,
+   "query": "\"Sunnyside\" Queens",
+   "decades": {
+    "pre-1950": 1030,
+    "1950s": 528,
+    "1960s": 444,
+    "1970s": 513,
+    "1980s": 230,
+    "1990s": 400,
+    "2000s": 750,
+    "2010s": 352,
+    "2020s": 149
+   },
+   "total": 4396,
+   "first": {
+    "date": "1864-01-26",
+    "headline": "The Prize Ring.",
+    "url": "https://www.nytimes.com/1864/01/26/archives/the-prize-ring.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name, and other Sunnysides (the Irving estate on the Hudson, for one) may match. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Ridgewood",
+   "borough": "Queens",
+   "lat": 40.7043,
+   "lon": -73.9055,
+   "query": "\"Ridgewood\" Queens",
+   "decades": {
+    "pre-1950": 2850,
+    "1950s": 762,
+    "1960s": 502,
+    "1970s": 675,
+    "1980s": 389,
+    "1990s": 457,
+    "2000s": 577,
+    "2010s": 385,
+    "2020s": 267
+   },
+   "total": 6864,
+   "first": {
+    "date": "1860-09-26",
+    "headline": "BROOKLYN NEWS.",
+    "url": "https://www.nytimes.com/1860/09/26/archives/brooklyn-news.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name, and some matches may be Ridgewood, New Jersey. The date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Flushing",
+   "borough": "Queens",
+   "lat": 40.758,
+   "lon": -73.83,
+   "query": "\"Flushing\" Queens",
+   "decades": {
+    "pre-1950": 10000,
+    "1950s": 3799,
+    "1960s": 3805,
+    "1970s": 5170,
+    "1980s": 2892,
+    "1990s": 3346,
+    "2000s": 4268,
+    "2010s": 2705,
+    "2020s": 789
+   },
+   "total": 36774,
+   "first": {
+    "date": "1860-10-26",
+    "headline": "Extension of the New-York and Flushing Railroad to Glen Cove and Huntington.",
+    "url": "https://www.nytimes.com/1860/10/26/archives/extension-of-the-newyork-and-flushing-railroad-to-glen-cove-and.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "The pre-1950 count hit the API ceiling of 10,000. Counts likely include Flushing Meadows stories, among them coverage of the 1939 and 1964 World's Fairs.",
+   "capped": [
+    "pre-1950"
+   ]
+  },
+  {
+   "name": "Jamaica",
+   "borough": "Queens",
+   "lat": 40.702,
+   "lon": -73.789,
+   "query": "\"Jamaica\" Queens",
+   "decades": {
+    "pre-1950": 10000,
+    "1950s": 4100,
+    "1960s": 3637,
+    "1970s": 4329,
+    "1980s": 2657,
+    "1990s": 2930,
+    "2000s": 3400,
+    "2010s": 1643,
+    "2020s": 652
+   },
+   "total": 33348,
+   "first": {
+    "date": "1860-01-25",
+    "headline": "BROOKLYN INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1860/01/25/archives/brooklyn-intelligence.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name. Counts include Jamaica Bay and Jamaica Avenue stories, and some about the country. The pre-1950 count hit the API ceiling of 10,000. The date is the earliest search match.",
+   "capped": [
+    "pre-1950"
+   ]
+  },
+  {
+   "name": "Rego Park",
+   "borough": "Queens",
+   "lat": 40.726,
+   "lon": -73.862,
+   "query": "\"Rego Park\" Queens",
+   "decades": {
+    "pre-1950": 523,
+    "1950s": 487,
+    "1960s": 551,
+    "1970s": 910,
+    "1980s": 416,
+    "1990s": 710,
+    "2000s": 521,
+    "2010s": 181,
+    "2020s": 61
+   },
+   "total": 4360,
+   "first": {
+    "date": "1926-08-08",
+    "headline": "QUEENS TROLLEYS TIED UP.",
+    "url": "https://www.nytimes.com/1926/08/08/archives/queens-trolleys-tied-up-workers-delayed-an-hour-when-car-jumps.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "The name first appears in 1926, in a story about a trolley jumping its track.",
+   "capped": []
+  },
+  {
+   "name": "Far Rockaway",
+   "borough": "Queens",
+   "lat": 40.605,
+   "lon": -73.755,
+   "query": "\"Far Rockaway\" Queens",
+   "decades": {
+    "pre-1950": 2525,
+    "1950s": 691,
+    "1960s": 803,
+    "1970s": 1039,
+    "1980s": 448,
+    "1990s": 477,
+    "2000s": 593,
+    "2010s": 375,
+    "2020s": 159
+   },
+   "total": 7110,
+   "first": {
+    "date": "1899-08-15",
+    "headline": "APPEAL TO THE GOVERNOR",
+    "url": "https://www.nytimes.com/1899/08/15/archives/appeal-to-the-governor-far-rockaway-men-to-ask-him-to-stop-gambling.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Riverdale",
+   "borough": "Bronx",
+   "lat": 40.89,
+   "lon": -73.912,
+   "query": "\"Riverdale\" Bronx",
+   "decades": {
+    "pre-1950": 1879,
+    "1950s": 1184,
+    "1960s": 1593,
+    "1970s": 1849,
+    "1980s": 1428,
+    "1990s": 2001,
+    "2000s": 2375,
+    "2010s": 1010,
+    "2020s": 227
+   },
+   "total": 13546,
+   "first": {
+    "date": "1901-12-07",
+    "headline": "MARK TWAIN.",
+    "url": "https://www.nytimes.com/1901/12/07/archives/mark-twain-living-now-in-riverdale-his-old-home-in-hertford-and-the.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Mott Haven",
+   "borough": "Bronx",
+   "lat": 40.809,
+   "lon": -73.923,
+   "query": "\"Mott Haven\" Bronx",
+   "decades": {
+    "pre-1950": 494,
+    "1950s": 102,
+    "1960s": 111,
+    "1970s": 164,
+    "1980s": 110,
+    "1990s": 371,
+    "2000s": 429,
+    "2010s": 275,
+    "2020s": 134
+   },
+   "total": 2190,
+   "first": {
+    "date": "1900-05-16",
+    "headline": "MOTT HAVEN CANAL CASE.",
+    "url": "https://www.nytimes.com/1900/05/16/archives/mott-haven-canal-case-court-denies-motion-of-opponents-of-street-on.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Hunts Point",
+   "borough": "Bronx",
+   "lat": 40.8094,
+   "lon": -73.8803,
+   "query": "\"Hunts Point\" Bronx",
+   "decades": {
+    "pre-1950": 1359,
+    "1950s": 198,
+    "1960s": 293,
+    "1970s": 530,
+    "1980s": 312,
+    "1990s": 438,
+    "2000s": 656,
+    "2010s": 341,
+    "2020s": 103
+   },
+   "total": 4230,
+   "first": {
+    "date": "1910-09-11",
+    "headline": "HUNTS POINT AUCTION.",
+    "url": "https://www.nytimes.com/1910/09/11/archives/hunts-point-auction-three-hundred-lots-to-be-sold-on-night-of-oct.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Co-op City",
+   "borough": "Bronx",
+   "lat": 40.874,
+   "lon": -73.829,
+   "query": "\"Co-op City\" Bronx",
+   "decades": {
+    "pre-1950": 0,
+    "1950s": 0,
+    "1960s": 81,
+    "1970s": 666,
+    "1980s": 275,
+    "1990s": 258,
+    "2000s": 260,
+    "2010s": 123,
+    "2020s": 49
+   },
+   "total": 1712,
+   "first": {
+    "date": "1965-02-20",
+    "headline": "ARCHITECTS SCORE CO-OP CITY DESIGN",
+    "url": "https://www.nytimes.com/1965/02/20/archives/architects-score-coop-city-design-project-is-called-negation-of.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "coined",
+   "note": "The name first appears in 1965 coverage of the plan to build the development on the Freedomland site.",
+   "capped": []
+  },
+  {
+   "name": "City Island",
+   "borough": "Bronx",
+   "lat": 40.8468,
+   "lon": -73.787,
+   "query": "\"City Island\" Bronx",
+   "decades": {
+    "pre-1950": 1327,
+    "1950s": 267,
+    "1960s": 173,
+    "1970s": 208,
+    "1980s": 187,
+    "1990s": 344,
+    "2000s": 416,
+    "2010s": 183,
+    "2020s": 61
+   },
+   "total": 3166,
+   "first": {
+    "date": "1901-04-06",
+    "headline": "City Island Yacht News.",
+    "url": "https://www.nytimes.com/1901/04/06/archives/city-island-yacht-news.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "St. George",
+   "borough": "Staten Island",
+   "lat": 40.6437,
+   "lon": -74.077,
+   "query": "\"St. George\" Staten Island",
+   "decades": {
+    "pre-1950": 3211,
+    "1950s": 653,
+    "1960s": 283,
+    "1970s": 279,
+    "1980s": 227,
+    "1990s": 339,
+    "2000s": 551,
+    "2010s": 303,
+    "2020s": 50
+   },
+   "total": 5896,
+   "first": {
+    "date": "1860-02-13",
+    "headline": "MARINE INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1860/02/13/archives/marine-intelligence-cleared-arrived-arrived-sailed-by-telegraph.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "An 1872 headline about a St. George cricket club is excluded. No early headline or summary shows the neighborhood name, so the date is the earliest search match.",
+   "capped": []
+  },
+  {
+   "name": "Tottenville",
+   "borough": "Staten Island",
+   "lat": 40.512,
+   "lon": -74.244,
+   "query": "\"Tottenville\" Staten Island",
+   "decades": {
+    "pre-1950": 1036,
+    "1950s": 120,
+    "1960s": 80,
+    "1970s": 144,
+    "1980s": 123,
+    "1990s": 170,
+    "2000s": 221,
+    "2010s": 106,
+    "2020s": 45
+   },
+   "total": 2045,
+   "first": {
+    "date": "1878-03-24",
+    "headline": "FURTHER VIEWS AFOOT.",
+    "url": "https://www.nytimes.com/1878/03/24/archives/further-views-afoot-staten-island-in-the-early-spring-the-landscape.html",
+    "section": "Archives",
+    "confirmed": true
+   },
+   "category": "old",
+   "note": "",
+   "capped": []
+  },
+  {
+   "name": "Great Kills",
+   "borough": "Staten Island",
+   "lat": 40.554,
+   "lon": -74.151,
+   "query": "\"Great Kills\" Staten Island",
+   "decades": {
+    "pre-1950": 514,
+    "1950s": 113,
+    "1960s": 106,
+    "1970s": 157,
+    "1980s": 109,
+    "1990s": 143,
+    "2000s": 154,
+    "2010s": 68,
+    "2020s": 18
+   },
+   "total": 1382,
+   "first": {
+    "date": "1865-05-12",
+    "headline": "Obituary 1 -- No Title",
+    "url": "https://www.nytimes.com/1865/05/12/archives/obituary-1-no-title.html",
+    "section": "Archives",
+    "confirmed": false
+   },
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
    "capped": []
   }
  ],

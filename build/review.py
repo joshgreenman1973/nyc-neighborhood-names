@@ -80,8 +80,24 @@ FIRST = {  # name: (date, headline fragment, source list or None for raw oldest,
  'Coney Island': ('1860-03-29', 'THE MURDERS AT SEA', None, False),
  'Starrett City': ('1972-07-16', 'Housing for 24,000', None, True),
  'Jackson Heights': ('1917-04-04', 'Rifle Club at Jackson Heights', None, True),
+ 'Sunset Park': ('1957-03-11', 'CHURCH REDEDICATED', 'Sunset Park|19550101|0', True),
+ 'Forest Hills': ('1910-08-14', 'MORE SAGE HOTELS', None, True),
+ 'Sunnyside': ('1864-01-26', 'The Prize Ring', None, False),
+ 'Ridgewood': ('1860-09-26', 'BROOKLYN NEWS', None, False),
+ 'Flushing': ('1860-10-26', 'Extension of the New-York and Flushing', None, True),
+ 'Jamaica': ('1860-01-25', 'BROOKLYN INTELLIGENCE', None, False),
+ 'Rego Park': ('1926-08-08', 'QUEENS TROLLEYS TIED UP', None, True),
+ 'Far Rockaway': ('1899-08-15', 'APPEAL TO THE GOVERNOR', None, True),
+ 'Riverdale': ('1901-12-07', 'MARK TWAIN', None, True),
+ 'Mott Haven': ('1900-05-16', 'MOTT HAVEN CANAL CASE', None, True),
+ 'Hunts Point': ('1910-09-11', 'HUNTS POINT AUCTION', None, True),
+ 'Co-op City': ('1965-02-20', 'ARCHITECTS SCORE CO-OP CITY', None, True),
+ 'City Island': ('1901-04-06', 'City Island Yacht News', None, True),
+ 'St. George': ('1860-02-13', 'MARINE INTELLIGENCE', None, False),
+ 'Tottenville': ('1878-03-24', 'FURTHER VIEWS AFOOT', None, True),
+ 'Great Kills': ('1865-05-12', 'Obituary 1', None, False),
 }
-PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Park Slope', 'Williamsburg', 'Harlem', 'Bushwick', 'Upper West Side', 'Upper East Side', 'Greenwich Village', 'Lower East Side', 'Brooklyn Heights', 'Bedford-Stuyvesant', 'Red Hook', 'Gowanus', 'Astoria', 'Long Island City', 'Greenpoint', 'Crown Heights', 'Flatbush', 'Kensington', 'Bay Ridge', 'Dyker Heights', 'Bensonhurst', 'Brownsville', 'East New York', 'Canarsie', 'Sheepshead Bay', 'Brighton Beach', 'Coney Island', 'Jackson Heights', 'Manhattan Valley', 'Stuyvesant Heights',
+PRE1950_ACCEPTED = {"Hell's Kitchen", 'Prospect Heights', 'Park Slope', 'Williamsburg', 'Harlem', 'Bushwick', 'Upper West Side', 'Upper East Side', 'Greenwich Village', 'Lower East Side', 'Brooklyn Heights', 'Bedford-Stuyvesant', 'Red Hook', 'Gowanus', 'Astoria', 'Long Island City', 'Greenpoint', 'Crown Heights', 'Flatbush', 'Kensington', 'Bay Ridge', 'Dyker Heights', 'Bensonhurst', 'Brownsville', 'East New York', 'Canarsie', 'Sheepshead Bay', 'Brighton Beach', 'Coney Island', 'Jackson Heights', 'Forest Hills', 'Sunnyside', 'Ridgewood', 'Flushing', 'Jamaica', 'Rego Park', 'Far Rockaway', 'Riverdale', 'Mott Haven', 'Hunts Point', 'City Island', 'St. George', 'Tottenville', 'Great Kills', 'Manhattan Valley', 'Stuyvesant Heights',
                     'Hunters Point', 'Port Morris', 'Dutch Kills', 'Ditmas Park'}
 NOTES = {
  'SoHo': "All 36 matches before 1970 are London's Soho or other uses, judging by their headlines and summaries.",
@@ -123,6 +139,16 @@ NOTES = {
  'Crown Heights': 'The 1912 headline puts a Jesuit college "on Crown Heights."',
  'Starrett City': 'The 1972 summary describes the start of construction on the housing development that gave the area its name.',
  'Sheepshead Bay': 'The earliest confirmed headlines are about the racetrack at Sheepshead Bay.',
+ 'Sunset Park': 'Earlier matches include the park itself and other Sunset Parks, such as a Catskills inn. They are not counted. The 1957 headline describes a renovated Sunset Park church in Brooklyn.',
+ 'Forest Hills': 'Counts from the 1910s to the 1970s likely include many tennis stories; the national championships were played at Forest Hills for decades.',
+ 'Sunnyside': 'No early headline or summary shows the name, and other Sunnysides (the Irving estate on the Hudson, for one) may match. The date is the earliest search match.',
+ 'Ridgewood': 'No early headline or summary shows the name, and some matches may be Ridgewood, New Jersey. The date is the earliest search match.',
+ 'Jamaica': 'No early headline or summary shows the name. Counts include Jamaica Bay and Jamaica Avenue stories, and some about the country. The pre-1950 count hit the API ceiling of 10,000. The date is the earliest search match.',
+ 'Flushing': 'The pre-1950 count hit the API ceiling of 10,000. Counts likely include Flushing Meadows stories, among them coverage of the 1939 and 1964 World\'s Fairs.',
+ 'Co-op City': 'The name first appears in 1965 coverage of the plan to build the development on the Freedomland site.',
+ 'St. George': 'An 1872 headline about a St. George cricket club is excluded. No early headline or summary shows the neighborhood name, so the date is the earliest search match.',
+ 'Great Kills': 'No early headline or summary shows the name. The date is the earliest search match.',
+ 'Rego Park': 'The name first appears in 1926, in a story about a trolley jumping its track.',
  'Hunters Point': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Dutch Kills': 'No early headline or summary shows the name. The date is the earliest search match.',
  'Port Morris': 'No early headline or summary shows the name. The date is the earliest search match.',
@@ -155,7 +181,7 @@ for name, (date, frag, src, conf) in FIRST.items():
     out['names'][name] = {'category': cat, 'note': NOTES.get(name, ''),
         'first': {'date': d['date'], 'headline': d['headline'].split(';')[0].strip(), 'url': d['url'],
                   'section': d.get('section', ''), 'confirmed': conf}}
-PENDING = {'Sunset Park'}  # needs a date-bounded search; pre-1950 matches are other Sunset Parks
+PENDING = set()  # needs a date-bounded search; pre-1950 matches are other Sunset Parks
 missing = set(raw) - set(FIRST) - set(DROP) - PENDING
 assert not missing, missing
 json.dump(out, open(os.path.join(ROOT, 'build', 'review.json'), 'w'), indent=1, ensure_ascii=False)

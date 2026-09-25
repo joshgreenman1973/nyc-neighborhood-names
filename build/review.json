@@ -704,6 +704,182 @@
     "section": "Archives",
     "confirmed": true
    }
+  },
+  "Sunset Park": {
+   "category": "coined",
+   "note": "Earlier matches include the park itself and other Sunset Parks, such as a Catskills inn. They are not counted. The 1957 headline describes a renovated Sunset Park church in Brooklyn.",
+   "first": {
+    "date": "1957-03-11",
+    "headline": "CHURCH REDEDICATED",
+    "url": "https://www.nytimes.com/1957/03/11/archives/church-rededicated-renovated-sunset-park-edifice-again-in-use-in.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Forest Hills": {
+   "category": "old",
+   "note": "Counts from the 1910s to the 1970s likely include many tennis stories; the national championships were played at Forest Hills for decades.",
+   "first": {
+    "date": "1910-08-14",
+    "headline": "MORE SAGE HOTELS.",
+    "url": "https://www.nytimes.com/1910/08/14/archives/more-sage-hotels-three-going-up-at-forest-hills-li-by-order-of-the.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Sunnyside": {
+   "category": "old",
+   "note": "No early headline or summary shows the name, and other Sunnysides (the Irving estate on the Hudson, for one) may match. The date is the earliest search match.",
+   "first": {
+    "date": "1864-01-26",
+    "headline": "The Prize Ring.",
+    "url": "https://www.nytimes.com/1864/01/26/archives/the-prize-ring.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Ridgewood": {
+   "category": "old",
+   "note": "No early headline or summary shows the name, and some matches may be Ridgewood, New Jersey. The date is the earliest search match.",
+   "first": {
+    "date": "1860-09-26",
+    "headline": "BROOKLYN NEWS.",
+    "url": "https://www.nytimes.com/1860/09/26/archives/brooklyn-news.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Flushing": {
+   "category": "old",
+   "note": "The pre-1950 count hit the API ceiling of 10,000. Counts likely include Flushing Meadows stories, among them coverage of the 1939 and 1964 World's Fairs.",
+   "first": {
+    "date": "1860-10-26",
+    "headline": "Extension of the New-York and Flushing Railroad to Glen Cove and Huntington.",
+    "url": "https://www.nytimes.com/1860/10/26/archives/extension-of-the-newyork-and-flushing-railroad-to-glen-cove-and.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Jamaica": {
+   "category": "old",
+   "note": "No early headline or summary shows the name. Counts include Jamaica Bay and Jamaica Avenue stories, and some about the country. The pre-1950 count hit the API ceiling of 10,000. The date is the earliest search match.",
+   "first": {
+    "date": "1860-01-25",
+    "headline": "BROOKLYN INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1860/01/25/archives/brooklyn-intelligence.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Rego Park": {
+   "category": "old",
+   "note": "The name first appears in 1926, in a story about a trolley jumping its track.",
+   "first": {
+    "date": "1926-08-08",
+    "headline": "QUEENS TROLLEYS TIED UP.",
+    "url": "https://www.nytimes.com/1926/08/08/archives/queens-trolleys-tied-up-workers-delayed-an-hour-when-car-jumps.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Far Rockaway": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1899-08-15",
+    "headline": "APPEAL TO THE GOVERNOR",
+    "url": "https://www.nytimes.com/1899/08/15/archives/appeal-to-the-governor-far-rockaway-men-to-ask-him-to-stop-gambling.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Riverdale": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1901-12-07",
+    "headline": "MARK TWAIN.",
+    "url": "https://www.nytimes.com/1901/12/07/archives/mark-twain-living-now-in-riverdale-his-old-home-in-hertford-and-the.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Mott Haven": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1900-05-16",
+    "headline": "MOTT HAVEN CANAL CASE.",
+    "url": "https://www.nytimes.com/1900/05/16/archives/mott-haven-canal-case-court-denies-motion-of-opponents-of-street-on.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Hunts Point": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1910-09-11",
+    "headline": "HUNTS POINT AUCTION.",
+    "url": "https://www.nytimes.com/1910/09/11/archives/hunts-point-auction-three-hundred-lots-to-be-sold-on-night-of-oct.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Co-op City": {
+   "category": "coined",
+   "note": "The name first appears in 1965 coverage of the plan to build the development on the Freedomland site.",
+   "first": {
+    "date": "1965-02-20",
+    "headline": "ARCHITECTS SCORE CO-OP CITY DESIGN",
+    "url": "https://www.nytimes.com/1965/02/20/archives/architects-score-coop-city-design-project-is-called-negation-of.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "City Island": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1901-04-06",
+    "headline": "City Island Yacht News.",
+    "url": "https://www.nytimes.com/1901/04/06/archives/city-island-yacht-news.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "St. George": {
+   "category": "old",
+   "note": "An 1872 headline about a St. George cricket club is excluded. No early headline or summary shows the neighborhood name, so the date is the earliest search match.",
+   "first": {
+    "date": "1860-02-13",
+    "headline": "MARINE INTELLIGENCE.",
+    "url": "https://www.nytimes.com/1860/02/13/archives/marine-intelligence-cleared-arrived-arrived-sailed-by-telegraph.html",
+    "section": "Archives",
+    "confirmed": false
+   }
+  },
+  "Tottenville": {
+   "category": "old",
+   "note": "",
+   "first": {
+    "date": "1878-03-24",
+    "headline": "FURTHER VIEWS AFOOT.",
+    "url": "https://www.nytimes.com/1878/03/24/archives/further-views-afoot-staten-island-in-the-early-spring-the-landscape.html",
+    "section": "Archives",
+    "confirmed": true
+   }
+  },
+  "Great Kills": {
+   "category": "old",
+   "note": "No early headline or summary shows the name. The date is the earliest search match.",
+   "first": {
+    "date": "1865-05-12",
+    "headline": "Obituary 1 -- No Title",
+    "url": "https://www.nytimes.com/1865/05/12/archives/obituary-1-no-title.html",
+    "section": "Archives",
+    "confirmed": false
+   }
   }
  }
 }
